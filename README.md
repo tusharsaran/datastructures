@@ -17,10 +17,14 @@ DS is a way to 'organize data' in a way that enables it to be processed in an ef
              Primitive Data Structure                                                   Non Primitive Data Structure 
        (provided by programming language)                                                           |    
                     |                                                                               |
-                    |                                                                               |    
- --------------------------------------                                        -----------------------------------------                                      
- |             |            |          |                                       |                                       |  
-Float       Integer     Character   Boolean                                Physical DS                             Logical DS
+                    |                                                                               |
+        ------------------------------                                                  ----------------------------
+                    |                                                                               |
+      ---------------------------------------                                                       |
+      |             |            |          |                                                       |                                                                              
+      Float       Integer     Character   Boolean                           -----------------------------------------                                      
+                                                                            |                                       |  
+                                                                         Physical DS                            Logical DS
                                                             (are the one that are implemented         (are logical in nature
                                                               standalone and are physically             i.e. they have their 
                                                                   present in RAM).                        own concpept but                                                  
@@ -31,15 +35,22 @@ Float       Integer     Character   Boolean                                Physi
                                                         |                 |               |           |            |        |
                                                      Array            LinkedList        Stack       Queue         Tree   Graph
                                                      
-                                                     
-Logical Data structure are dependent on Physical DS for their implementation as they have their own concept that means the way to do the calculation but when it comes to implementation they are completely dependent o Physical DS. 
-Lets say you want to implement stack so it will either use Array or Linled List for the implementation same goes for other Logical DS.
+                                         
+                                      
+Logical Data structure are dependent on Physical DS for their implementation as they have their own concept that means the 
+way to do the calculation but when it comes to implementation they are completely dependent o Physical DS. 
+
+Lets say you want to implement stack so it will either use Array or Linled List for the implementation same goes for 
+other Logical DS.
 
 
 # Recursion
 
-                                                        
-                                                        
+                                         
+                                         
+                                         
+                                         
+                                         
                                                         
                                                         
                                                         
