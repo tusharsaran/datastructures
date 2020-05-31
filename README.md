@@ -18,8 +18,6 @@ DS is a way to 'organize data' in a way that enables it to be processed in an ef
        (provided by programming language)                                                           |    
                     |                                                                               |
                     |                                                                               |
-        ------------------------------                                                  ----------------------------
-                    |                                                                               |
       ---------------------------------------                                                       |
       |             |            |          |                                                       |                                                                              
       Float       Integer     Character   Boolean                           -----------------------------------------                                      
