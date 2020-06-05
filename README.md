@@ -67,13 +67,13 @@ other Logical DS.
 
     # Example Of Recursion method (Format):
 
-      SampleRecursion(parameter){
-        if(base case is satisfied){
-          return some base case value    
-        }else {
-           SampleRecursion(modified parameter)
-        }
-      } 
+        SampleRecursion(parameter){
+          if(base case is satisfied){
+            return some base case value    
+          }else {
+             SampleRecursion(modified parameter)
+          }
+        } 
                                                         
    # How Recursion works internally :
 
