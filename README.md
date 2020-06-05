@@ -96,12 +96,58 @@ other Logical DS.
       } 
 
       doMore(){
-          System.out.println("inside doMore");
-      }
+        System.out.println("inside doMore");
+        }
 
-Stack Image:
 
+# Stack Image of non-recursive method :
+
+      Pop       Push
+
+      doMore()
+      doWork()
+      bar()
+      main()
                                                 
-                                                        
+ 
+ # In case of Recursive method:
+ 
+    main(){
+      foo(3);
+    }
+    
+    foo(n){
+      if(n < 1){
+        return n;
+       }
+       else{
+          foo(n-1);
+          System.out.println("The number is : " + n);
+        }
+    
+    
+  # Stack Image for recursive method :
+
+      Pop       Push
+
+      foo(1)
+      foo(2)
+      foo(3)
+      main()    
+      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
                                                         
                                                                                   
