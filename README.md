@@ -149,9 +149,12 @@ other Logical DS.
       main()    
       
  
- Here is another example that will display the code as well how JVM arrange the recursion method call in stack:
  
- ![](images/git_stack_image2.png)
+ #Here is another example that will display the code as well how JVM arrange the recursion method call in stack:
+ 
+ 
+ 
+  ![](images/git_stack_image2.png)
  
  
  
