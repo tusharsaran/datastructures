@@ -109,11 +109,11 @@ other Logical DS.
         }
 
 
-<h3>Stack Image of non-recursive method :<h3>
-
+<h3>Stack Image of non-recursive method :</h3>
+<br>
  ![](images/git_stack_image1.png)
-      
-So how does it work internaly in this case:
+ <br>     
+<b>So how does it work internaly in this case:</b>
  
     1. Jvm calls the main() method and notice that the main() method is calling bar() method so it will push the main method 
        in the stack and once the bar method process completes then it will invoke the next line in the main method i.e. 
