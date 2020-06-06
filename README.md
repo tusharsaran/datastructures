@@ -41,8 +41,14 @@ way to do the calculation but when it comes to implementation they are completel
 Lets say you want to implement stack so it will either use Array or Linled List for the implementation same goes for 
 other Logical DS.
 
+<br><br>
+<hr>
 
-# Recursion : Calling Yourself
+
+# DS - Section 1: RECURSION
+
+<br><br>
+<h2>Recursion : Calling Yourself</h2>
   Imagine leaving a building that has a revolving door. Instead of exiting the building, you keep going around and around        
   again, until someone tells you to exit (or you pass out from dizziness). In programming, a recursive method is like this: it   
   calls itself over and over until something triggers its exit.
@@ -50,22 +56,25 @@ other Logical DS.
   You may see possible issues with this right away. The danger is that the method will repeat itself until the program  
   crashes.                                       
                                          
-# Properties of Recursion:
-  - Same operation is performed multiple times with different input.
-  - In every step we try to make the problem smaller.
-  - We mandatorily need to have a base condition which tells when to stop the recursion.                                         
-                                         
-# Why should we learn Recursion:
-  - Because it makes the code easy to read & write (compared to iterative) whenever a given problem can be broken down into               
-    similar sub-problem.
-  - Because it is heavily used in Data structures like Tree and Graph.
-  - It is heavily used in techniques like "Divide and Conquer", "Greedy", Dynamic Programming.                                          
-                                                        
-# Format of a recursive function or method:
-  - Recursive case: Case where the function recur
-  - Base case: Case where the function does not recur.
+<h2>Properties of Recursion:</h2>
 
-    # Example Of Recursion method (Format):
+    - Same operation is performed multiple times with different input.
+    - In every step we try to make the problem smaller.
+    - We mandatorily need to have a base condition which tells when to stop the recursion.                                         
+                                         
+<h2>Why should we learn Recursion:</h2>
+  
+    - Because it makes the code easy to read & write (compared to iterative) whenever a given problem can be broken down into               
+      similar sub-problem.
+    - Because it is heavily used in Data structures like Tree and Graph.
+    - It is heavily used in techniques like "Divide and Conquer", "Greedy", Dynamic Programming.                                          
+                                                        
+<h2>Format of a recursive function or method:</h2>
+    
+    - Recursive case: Case where the function recur
+    - Base case: Case where the function does not recur.
+
+    <h3>Example Of Recursion method (Format):<h3>
 
         SampleRecursion(parameter){
           if(base case is satisfied){
@@ -75,7 +84,7 @@ other Logical DS.
           }
         } 
                                                         
-   # How Recursion works internally :
+   <h2>How Recursion works internally :</h2>
 
     Basically here we will understand how the Recursion method is managed in STACK.
 
@@ -100,11 +109,11 @@ other Logical DS.
         }
 
 
-# Stack Image of non-recursive method :
+<h3>Stack Image of non-recursive method :<h3>
 
  ![](images/git_stack_image1.png)
       
- So how does it work internaly in this case:
+ <b><i>So how does it work internaly in this case:</i></b>
  
     1. Jvm calls the main() method and notice that the main() method is calling bar() method so it will push the main method 
        in the stack and once the bar method process completes then it will invoke the next line in the main method i.e. 
@@ -117,14 +126,14 @@ other Logical DS.
        doWork method  i.e.  "System.out.println("inside doWork");".
     4. Next jvm will invoke the doMore method and print "inside doMore" - "System.out.println("inside doMore");".
   
-  output: u
+  <b>output: </b>
           
           inside doMore
           inside doWork
           inside bar
           inside main
   
- # In case of Recursive method:
+ <h2> In case of Recursive method:</h2>
  
     main(){
       foo(3);
@@ -139,7 +148,7 @@ other Logical DS.
           System.out.println("The number is : " + n);
         }
     
-  # Stack Image for recursive method :
+  <h3>Stack Image for recursive method :</h3>
 
       Pop       Push
 
@@ -150,7 +159,7 @@ other Logical DS.
       
  
 
-# Here is another example that will display the code as well how JVM arrange the recursion method call in stack:
+<h2> Here is another example that will display the code as well how JVM arrange the recursion method call in stack: <h2>
  
  
  
