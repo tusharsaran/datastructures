@@ -111,8 +111,10 @@ other Logical DS.
 
 <h3>Stack Image of non-recursive method :</h3>
 <br>
- ![](images/git_stack_image1.png)
- <br>     
+
+![](images/git_stack_image1.png)
+
+<br>     
 <b>So how does it work internaly in this case:</b>
  
     1. Jvm calls the main() method and notice that the main() method is calling bar() method so it will push the main method 
