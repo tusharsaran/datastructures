@@ -102,14 +102,32 @@ other Logical DS.
 
 # Stack Image of non-recursive method :
 
+ ![](images/git_stack_image1.png)
+      
       Pop       Push
 
       doMore()
       doWork()
       bar()
       main()
-                                                
- 
+      So how does it work internaly in this case:
+      1. Jvm calls the main() method and notice that the main() method is calling bar() method so it will push the main method 
+      in the stack and once the bar method process completes then it will invoke the next line in the main method i.e. 
+      "System.out.println("inside main");" and so on..
+      2. then jvm will invoke the bar method and notice that it is calling the doWork() method so it will push the bar() 
+      method in the stack and once the doWork method process completes then it will invoke the next line in the bar method    
+      i.e.  "System.out.println("inside bar");".
+      3. Similarly jvm will invoke the doWork method and notice that it is calling the doMore() method so it will push the    
+      doWork() method in the stack and once the doMore method process completes then it will invoke the next line in the 
+      doWork method  i.e.  "System.out.println("inside doWork");".
+      4. Next jvm will invoke the doMore method and print "inside doMore" - "System.out.println("inside doMore");".
+  
+      output: 
+          inside doMore
+          inside doWork
+          inside bar
+          inside main
+  
  # In case of Recursive method:
  
     main(){
