@@ -113,7 +113,7 @@ other Logical DS.
 
  ![](images/git_stack_image1.png)
       
- <b>So how does it work internaly in this case:</b>
+<b>So how does it work internaly in this case:</b>
  
     1. Jvm calls the main() method and notice that the main() method is calling bar() method so it will push the main method 
        in the stack and once the bar method process completes then it will invoke the next line in the main method i.e. 
