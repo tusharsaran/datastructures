@@ -6,18 +6,19 @@ package com.recursion.practice;
 public class FirstRecursionClass {
 
 	public static void main(String[] args) {
-		showNumber(5);
+		System.out.println(showNumber(5));
 	}
 	
 	static int showNumber(int num) {
 		if(num <  1) {
 			System.out.println("the number is  : " +  num);
-			return num;
+			return num; 
 		}else {
 			showNumber(num -  1);
 			System.out.println("the number is  : " +  num);
+			return num; 
 		}
-		return 0;
+		
 	}
 
 }
