@@ -113,7 +113,7 @@ other Logical DS.
 
  ![](images/git_stack_image1.png)
       
- <b><i>So how does it work internaly in this case:</i></b>
+ <b>So how does it work internaly in this case:</b>
  
     1. Jvm calls the main() method and notice that the main() method is calling bar() method so it will push the main method 
        in the stack and once the bar method process completes then it will invoke the next line in the main method i.e. 
@@ -126,7 +126,7 @@ other Logical DS.
        doWork method  i.e.  "System.out.println("inside doWork");".
     4. Next jvm will invoke the doMore method and print "inside doMore" - "System.out.println("inside doMore");".
   
-  <b>output: </b>
+  <h3>output: </h3>
           
           inside doMore
           inside doWork
@@ -161,7 +161,7 @@ other Logical DS.
 
 <h2> Here is another example that will display the code as well how JVM arrange the recursion method call in stack: <h2>
  
- 
+ <br>
  
   ![](images/git_stack_image2.png)
  
