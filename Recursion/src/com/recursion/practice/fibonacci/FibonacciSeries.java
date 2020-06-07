@@ -1,4 +1,4 @@
-package com.recursion.practice;
+package com.recursion.practice.fibonacci;
 
 public class FibonacciSeries {
 
