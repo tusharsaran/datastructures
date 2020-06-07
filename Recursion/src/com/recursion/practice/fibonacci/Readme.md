@@ -1,6 +1,6 @@
 # How Fibonacci code works
 
-<p>Definition:  A fibonacci series is a series of numbers in which each number is sum of two preceding numbers</p>
+<p><b><u>Definition:</u></b>  A fibonacci series is a series of numbers in which each number is sum of two preceding numbers</p>
 First 2 numbers by definition are 0 and 1   
 <p>e.g.</p>  
 
@@ -27,7 +27,7 @@ First 2 numbers by definition are 1 and 1
 
 <br>
 <br>
-<b>Here is the following code snippet:</b>
+<b>Here is the following code snippet (of First 2 numbers by definition are 0 and 1):</b>
   
     static int findNumberInFibonacci(int num) throws Exception {
       if(num <  1) {
@@ -76,16 +76,12 @@ First 2 numbers by definition are 1 and 1
                        => 2
    so the output of 4th number in fibonacci series is 2                
  
+ <br><br>
+ <b> Here is the  code snippet (First 2 numbers by definition are 1 and 1) : </b>
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+    static int findFibonacciNumber(int num) {
+     if(num <= 1)
+      return num;
+     return (findFibonacciNumber(num - 1) + findFibonacciNumber(num - 2 ));
+
+    }
