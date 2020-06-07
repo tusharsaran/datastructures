@@ -42,7 +42,7 @@
  
    
   
-  2. <p> then it will again it check if the num i.e. 4 < 1 if yes then return 1 or else call num * findFactorial(4-1) => 4 *  
+  <p> 2. then it will again it check if the num i.e. 4 < 1 if yes then return 1 or else call num * findFactorial(4-1) => 4 *  
          findFactorial(3) here we dont know the value of findFactorial(3) so in the stack it will store the value as:</p>
   
   <table>
@@ -51,7 +51,7 @@
     <tbody>
       <b>STACK </b>
         <tr>
-          <td><pre>POP           PUSH</pre></b></td>
+          <td><pre>POP           PUSH</pre></td>
          </tr>
       <tr>
           <td> <b>  </b></td>
@@ -100,7 +100,7 @@
   </table>
   
  
- <h3><p> 
+  
   Now when the value of num < 1 it enters the if case (if  num < 1), prints the value "the number is  : 0) but jvm will not  
   call the return statement as if it does then the return statement   will come out of the showNumber(0) and due to that  
   it is not going to call the statements part of other recursion methods (showNumber(1), showNumber(2), showNumber(3), 
@@ -108,4 +108,4 @@
   Therefore it is going to call the rest of the statements of recurvise method that are part of else block. And once it 
   calls/prints all the recursive method, it will then call the return statement in else block (returning the value of num).
   Here the method will return the value of num  == 5 as before calling the return statement the value of um was 5.
-  </p></h3>
+  
