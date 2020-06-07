@@ -65,7 +65,7 @@
 <h3>Stack Image of non-recursive method :</h3>
 <br>
 
-![](images/git_stack_image1.png)
+![](../images/git_stack_image1.png)
 
 <br>     
 <b>So how does it work internaly in this case:</b>
@@ -118,7 +118,7 @@
  
  <br>
  
-  ![](images/git_stack_image2.png)
+  ![](../images/git_stack_image2.png)
  
  
  <h3> How recursive method works internally and things to remember</h3>
