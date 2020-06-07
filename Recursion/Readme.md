@@ -1,6 +1,6 @@
 # DS - Section 1: RECURSION
 
-<br><br>
+<br>
 <h2>Recursion : Calling Yourself</h2>
   Imagine leaving a building that has a revolving door. Instead of exiting the building, you keep going around and around        
   again, until someone tells you to exit (or you pass out from dizziness). In programming, a recursive method is like this: it   
@@ -140,4 +140,82 @@
          value of 3 and not 0 as when the return statement was invoked the value of num is 3 and not zero.
          
 <b><i>`"Point 3(above) is somewhat confusing but is logical and very important to understand about recursive methods"`</i>   </b>
+
+<br>
+<h3> Recursion vs Iteration </h3>
+`whatever functionality we can do with Recursion the same can be done by using Iteration`
  
+ <b> Difference between Recursion vs Iteration
+  <table>
+  <tr>
+    <th>
+      Particulars
+    </th>
+     <th>
+      Recursion
+    </th>
+     <th>
+      Iteration
+    </th>
+    </tr>
+    <tr>
+    <td>
+           Space efficient
+    </td>
+     <td>
+           NO
+    </td>
+     <td>
+           YES
+    </td>  
+  </tr>
+    <tr>
+    <td>
+           Time efficient 
+    </td>
+    <td>
+           NO
+    </td>
+     <td>
+           YES
+    </td>   
+  </tr>
+     <tr>
+    <td>
+           Ease to do(sove the sub problem)
+    </td>
+    <td>
+           YES
+    </td>
+     <td>
+           NO
+    </td>    
+  </tr>
+</table>
+
+<br>
+<p>Recursion is not space efficient as it uses stack to push and pop the methods which inturn will hold the space or memory where as Iterations do not use stack for the operations therefore it do not use space or memory</p>
+ 
+<p>Next Recursion is nor time efficient as it push and pop in the stack annd then uses some other miscellaneous activities like pointer etc. which is time consuming where as iteration do not do any such activity and therefore has the upper hand on Recursion.</p>
+
+<p> whenever the problem can be solved by breaking it doen into a similar sub sproblem in those case Recursion is a better approach them Iterations.</p>
+
+<h3> When to use Recursion </h3>
+<p> - when the space and time complexity is not a problem. like embedded system we cannot use recursion as space matters.</p>
+<p> - when we can break the problem in a similar sub problem</p>
+ <p>- when we need a quick solution without worrying about the efficiency.</p>
+
+<h3> When to avoid Recursion </h3>
+<p> - when time and space complexity matters.</p>
+<p> - when we cannot break the problem into a similar sub problem</p>
+<p> - when we dont want the quick solution and need an efficient one</p>
+
+<h3> Practical uses of Recursion </h3>
+<p> - Stack</p>
+<p> - Tree - traversal/inserting/deleting</p></p>
+<p> - Sort - Quick sort and merge sort</p>
+<p> - Divide & Conqueor</p>
+<p> - Dynamic Programming</p>
+<p> - </p>
+
+  
