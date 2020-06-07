@@ -18,7 +18,7 @@
     <thead>
     </thead>
     <tbody>
-        <b> STACK <b>
+        <b> STACK </b>
         <tr>
           <td><pre>POP           PUSH</pre></b></td>
          </tr>
@@ -79,7 +79,7 @@
     <tbody>
       <b>STACK </b>
         <tr>
-          <td><pre>POP           PUSH</pre></b></td>
+          <td><pre>POP           PUSH</pre></td>
          </tr>
       <tr>
           <td> <b> 1 * ? </b></td>
