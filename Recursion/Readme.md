@@ -143,9 +143,10 @@
 
 <br>
 <h3> Recursion vs Iteration </h3>
+
 `whatever functionality we can do with Recursion the same can be done by using Iteration`
  
- <b> Difference between Recursion vs Iteration
+ <b> Difference between Recursion vs Iteration </b>
   <table>
   <tr>
     <th>
