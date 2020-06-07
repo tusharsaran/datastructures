@@ -6,7 +6,7 @@ public class NameReversal {
 		System.out.println(reverseNameRecursive("Aarunya"));
 	}
 	
-	static String reverseNameRecursive(String theName){
+	private static String reverseNameRecursive(String theName){
 		if(theName.length() == 0) {
 			return theName;
 		}
