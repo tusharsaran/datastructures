@@ -1,6 +1,6 @@
 package com.recursion.practice.fibonacci;
 
-public class FibonacciSeries {
+public class FibonacciSeriesStartingFrom0 {
 
 	/*
 	 * @author : tusharsaran
@@ -13,7 +13,7 @@ public class FibonacciSeries {
 	
 	public static void main(String[] args) {
 		 try {
-			System.out.println(findNumberInFibonacci(4));
+			System.out.println(findNumberInFibonacci(10));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
