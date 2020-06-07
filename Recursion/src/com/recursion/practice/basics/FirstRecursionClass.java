@@ -1,4 +1,4 @@
-package com.recursion.practice;
+package com.recursion.practice.basics;
 /*
  * @author : tusharsaran
  * this is a first simple recursion class
