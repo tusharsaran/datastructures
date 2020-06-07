@@ -1,4 +1,4 @@
-**Lets see how the Facorial class works:**
+# Lets see how the Facorial class works:
 
   Below is the code snippet from <b>"Factorial_MoreOptimized"</b> class:
   
