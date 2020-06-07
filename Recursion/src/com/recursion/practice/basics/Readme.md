@@ -46,10 +46,15 @@ so it will call recursive method again and calls reverseNameRecursive("u"). Jvm 
 - Now reverseNameRecursive("") is called and it will check the lenght of the input this time the input ==0 so it will return
 output as `theName i.e. empty`
 
-Now if we go through the below diagram we will understand how we got out output
+Now if we go through the below diagram we will understand how we got out output:
 
-![](../../../../../images/git_image_3)
-![](../../../../../images/git_image_4)
+![](../../../../../../images/git_image_3.png)
+
+<br><br>
+<b> Here is how the stack will look : </b>
+
+
+![](../../../../../../images/git_image_4.png)
  
  
   
