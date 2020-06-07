@@ -1,5 +1,6 @@
 package com.recursion.practice;
 /*
+ * @author : tusharsaran
  * this class is to compute the Factorial
  * factorial is the product of all positive integers starting from 1 to n
  * it is denoted by n! (n exclamation)

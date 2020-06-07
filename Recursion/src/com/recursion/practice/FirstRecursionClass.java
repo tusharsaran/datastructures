@@ -1,8 +1,9 @@
 package com.recursion.practice;
 /*
+ * @author : tusharsaran
  * this is a first simple recursion class
+ * 
  */
-
 public class FirstRecursionClass {
 
 	public static void main(String[] args) {
