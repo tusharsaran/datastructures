@@ -1,6 +1,6 @@
 package com.recursion.practice.basics;
 
-public class BiggestNumberInArray {
+public class BiggestNumberinArray {
 
 	public static void main(String[] args) {
 		int [] numbers = {3,2,30,5, 50,60,12,54,32,86,57,12,6,9};
