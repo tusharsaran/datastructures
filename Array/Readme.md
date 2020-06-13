@@ -4,9 +4,61 @@ such that the position of each element can be computed from its indec cell by a 
 if you have an array then u can find the number in array from the first index.
 
 <br><br>
-<b>e.g. of Array:</b>
+<b>e.g. of Array :</b> Array of Integer with size 9 
+<table>
+  <tr>
+    <td>
+           12
+    </td>
+     <td>
+           2
+    </td>
+     <td>
+           5
+    </td>  
+    <td>
+           67
+    </td>
+    <td>
+          452
+    </td>
+     <td>
+           95
+    </td>   
+    <td>
+           56
+    </td>
+    <td>
+           7
+    </td>
+     <td>
+           36
+    </td>    
+  </tr>
+</table>
 
 
+<br><br>
+<b>e.g. of Array :</b> Array of char with size 5
+<table>
+  <tr>
+    <td>
+           'g'
+    </td>
+     <td>
+           'q'
+    </td>
+     <td>
+           'y'
+    </td>  
+    <td>
+           'p'
+    </td>
+    <td>
+          'd'
+    </td>
+  </tr>
+</table>
 
 <br><br>
 <b>Properties of an array :</b>
