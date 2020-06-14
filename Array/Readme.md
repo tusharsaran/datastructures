@@ -246,7 +246,7 @@ Lets say this is the memory before array got created
  <br> <br> 
   <h3> a. Single Dimension Array :</h3> 
       
-  <b>//Declaration  </b>
+  <b>(i)Declaration  </b>
   
       int[] arry;
       
@@ -278,12 +278,14 @@ Lets say this is the memory before array got created
 
  <br> <br> 
 
-  <b> Creating or instantiating an array </b>
+  <b>(ii)Creating or instantiating an array </b>
       
       int [] arry =  new int[4];
       
       Once an array is created the compiler do allocate the total size of an array in memory at any place and it is conitnues,
       since the array size is 4, compiler will allocate 4 memory cells to the array and will by default place 0 as the value.
+      Also it will get the memory address of the first cell of an array and allocate it to the reference variable i.e. arry.
+      Lets say the memory address of the first cell is 111 so it will store the address to the reference variable i.e. `arry`.
       
  
  
@@ -295,6 +297,126 @@ Lets say this is the memory before array got created
       </tr>
       <tr>
       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+    </table>
+
+   
+   <br> <br>  
+    
+  <b>(iii)initialization an array </b>
+  
+      arry[0] = 2;
+      arry[1] = 35;
+      arry[2] = 5;
+      arry[3] = 54;
+
+ <b>Memory after initializating values in an array: </b>
+  
+  <table>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2</td><td>35</td><td>5</td><td>54</td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+    </table>
+
+<br> 
+<b>Another way of creating array</b>
+
+      int[] arry = {0,3,3,5}
+
+<table>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>3</td><td>3</td><td>5</td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+    </table>
+
+
+<br><br>
+ <h3> b. Two Dimensional Array (is same like single dimensional array :</h3> 
+ 
+   <b>(i)Declaration  </b>
+  
+      int[][] arry;
+      
+      Once an array is declared the compiler do not allocate any memory, it only creates a reference in this case the 
+      reference is `arry`.
+  
+  
+  
+<b> Memory after array declaration:</b>
+
+<table>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+    </table>
+
+
+ <br> <br> 
+
+  <b>(ii)Creating or instantiating an array </b>
+      
+      int [][] arry =  new int[2][3];
+      
+      Once an array is created the compiler do allocate the total size of an array in memory at any place and it is conitnues,
+      since the array size is 4, compiler will allocate 4 memory cells to the array and will by default place 0 as the value.
+      Also it will get the memory address of the first cell of an array and allocate it to the reference variable i.e. arry.
+      Lets say the memory address of the first cell is 111 so it will store the address to the reference variable i.e. `arry`.
+      
+ 
+ 
+ <b>Memory after creating or instantiating an array: </b>
+  
+  <table>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
       </tr>
       <tr>
       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
@@ -336,6 +458,33 @@ Lets say this is the memory before array got created
       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
       </tr>
     </table>
+
+<br> 
+<b>Another way of creating array</b>
+
+      //int[] arry = {0,3,3,5}
+
+<table>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>3</td><td>3</td><td>5</td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+    </table>
+ 
+ 
+ 
+ 
 
 <br><br>
  <h3> Time Complexity of an array </h3>
