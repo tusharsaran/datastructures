@@ -489,6 +489,12 @@ Lets say this is the memory before array got created
  
 
 <br><br>
- <h3> Time Complexity of an array </h3>
+ <h3> Time Complexity of an Single Dimensional Array </h3>
  
  ![](../images/git_image_array.png)
+ 
+ 
+ <br><br>
+ <h3> Time Complexity of Two Dimensional Array </h3>
+ 
+ ![](../images/git_image_2darray.png)
