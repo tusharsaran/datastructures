@@ -434,10 +434,12 @@ Lets say this is the memory before array got created
     
   <b> initialization an array </b>
   
-      arry[0] = 2;
-      arry[1] = 35;
-      arry[2] = 5;
-      arry[3] = 54;
+      arry[0][0] = 2;
+      arry[0][1] = 35;
+      arry[0][2] = 5;
+      arry[1][0] = 77;
+      arry[2][1] = 54;
+      arry[3][2] = 74;
 
  <b>Memory after initializating values in an array: </b>
   
@@ -446,7 +448,7 @@ Lets say this is the memory before array got created
       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
       </tr>
       <tr>
-      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2</td><td>35</td><td>5</td><td>54</td> 
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2</td><td>35</td><td>5</td><td>77</td><td>54</td><td>74</td> 
       </tr>
       <tr>
       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
