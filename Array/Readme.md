@@ -258,5 +258,5 @@ if you have an array then u can find the number in array from the first index.
     
  <h3> Time Complexity of an array </h3>
  
- ![]../images/
+ ![](../images/git_image_array.png)
    
