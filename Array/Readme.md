@@ -219,6 +219,128 @@ if you have an array then u can find the number in array from the first index.
   </tr>
 </table>
 
+<br><br>
+<h3> Memory management of array </h3>
+  
+Lets say this is the memory before array got created
+    <table>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+    </table>
+  
+  
+ <br> <br> 
+  <h3> Single Dimension Array </h3> :
+      
+      //Declaration
+      int[] arry;
+      
+      Once an array is declared the compiler do not allocate any memory, it only creates a reference in this case the 
+      reference is `arry`.
+  
+  
+  
+<b>Memory after array declaration:</b>
+
+<table>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+    </table>
+
+
+ <br> <br> 
+
+      //Create
+      int [] arry =  new int[4];
+      
+      Once an array is created the compiler do allocate the total size of an array in memory at any place and it is conitnues,
+      since the array size is 4, compiler will allocate 4 memory cells to the array and will by default place 0 as the value.
+      
+ 
+ 
+ <b>Memory after creating or instantiating an array: </b>
+  
+  <table>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+    </table>
+
+   
+   <br> <br>  
+    
+    //initialization
+      arry[0] = 2;
+      arry[1] = 35;
+      arry[2] = 5;
+      arry[3] = 54;
+
+ <b>Memory after initializating values in an array: </b>
+  
+  <table>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2</td><td>35</td><td>5</td><td>54</td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+      <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      </tr>
+    </table>
+
+
+ <h3> Time Complexity of an array </h3>
+ 
+ ![](../images/git_image_array.png)
+
+
+
+<h2> Single Dimensional Array </h2>
 
 <h3> Creating single dimensional array </h3>
 
@@ -256,7 +378,5 @@ if you have an array then u can find the number in array from the first index.
       }
     }
     
- <h3> Time Complexity of an array </h3>
- 
- ![](../images/git_image_array.png)
+
    
