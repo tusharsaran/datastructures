@@ -1,7 +1,7 @@
 package com.array.practice;
 /*
  * Time complexity :
- * T(ß∞) =  O(n)
+ * T(∞) =  O(n)
  */
 public class CreateArray {
 
