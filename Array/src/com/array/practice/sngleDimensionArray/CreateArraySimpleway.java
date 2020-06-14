@@ -1,4 +1,4 @@
-package com.array.practice;
+package com.array.practice.sngleDimensionArray;
 /*
  * Time complexity :
  * T(∞) =  O(1) + 01
