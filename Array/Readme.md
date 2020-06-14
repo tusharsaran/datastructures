@@ -435,11 +435,11 @@ Lets say this is the memory before array got created
   <b> initialization an array </b>
   
       arry[0][0] = 2;
-      arry[0][1] = 35;
-      arry[0][2] = 5;
-      arry[1][0] = 77;
-      arry[2][1] = 54;
-      arry[3][2] = 74;
+		  arry[0][1] = 35;
+      arry[0][2] = 73;
+		  arry[1][0] = 77;
+		  arry[1][1] = 54;
+		  arry[1][2] = 74;
 
  <b>Memory after initializating values in an array: </b>
   
@@ -464,14 +464,14 @@ Lets say this is the memory before array got created
 <br> 
 <b>Another way of creating array</b>
 
-      //int[] arry = {0,3,3,5}
+      int[] arry = {{2,3,5},{64,85,12}};
 
 <table>
       <tr>
       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
       </tr>
       <tr>
-      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>3</td><td>3</td><td>5</td> 
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2</td><td>3</td><td>5</td><td>64</td><td>85</td><td>12</td> 
       </tr>
       <tr>
       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
