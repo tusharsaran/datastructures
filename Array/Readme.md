@@ -71,7 +71,7 @@ if you have an array then u can find the number in array from the first index.
   the size of an array. Once the array is created u cannot increase or decrease the size if of an array.Thats one of the 
   limitaion of an array.
   
-  
+ <br><br> 
    <h2> Why do we need an Aray </h2>
   <p>Lets say we have a problem where we have to store 1 million records of same data type. So one solution is to created 1     
   million records or variables with the same data type. 
@@ -80,6 +80,7 @@ if you have an array then u can find the number in array from the first index.
   <p>So Array come in picture where we can store data with the same data type and it is in maintaining and retriving or 
   computing on any given records. </p>
   
+  <br><br>
   <b>Types of Array : </b>
   - One dimensionsal : is the one which has one row and has multiple columns.
   - Multidimensional array : is the one which has `more than one rows or multiple rows` and multiple columns.
@@ -243,9 +244,10 @@ Lets say this is the memory before array got created
   
   
  <br> <br> 
-  <h3> Single Dimension Array </h3> :
+  <h3> a. Single Dimension Array :</h3> 
       
-      //Declaration
+  <b>//Declaration  </b>
+  
       int[] arry;
       
       Once an array is declared the compiler do not allocate any memory, it only creates a reference in this case the 
@@ -253,7 +255,7 @@ Lets say this is the memory before array got created
   
   
   
-<b>Memory after array declaration:</b>
+<b> Memory after array declaration:</b>
 
 <table>
       <tr>
@@ -276,7 +278,8 @@ Lets say this is the memory before array got created
 
  <br> <br> 
 
-      //Create
+  <b> Creating or instantiating an array </b>
+      
       int [] arry =  new int[4];
       
       Once an array is created the compiler do allocate the total size of an array in memory at any place and it is conitnues,
@@ -307,7 +310,8 @@ Lets say this is the memory before array got created
    
    <br> <br>  
     
-    //initialization
+  <b> initialization an array </b>
+  
       arry[0] = 2;
       arry[1] = 35;
       arry[2] = 5;
@@ -333,50 +337,7 @@ Lets say this is the memory before array got created
       </tr>
     </table>
 
-
+<br><br>
  <h3> Time Complexity of an array </h3>
  
  ![](../images/git_image_array.png)
-
-
-
-<h2> Single Dimensional Array </h2>
-
-<h3> Creating single dimensional array </h3>
-
-
-    //declaring an array 
-      int[] arry;   
-
-      //creating an array
-      arry = new int[5]; 
-
-      //initializing an array 
-      arry[0] = 3; 
-      arry[1] = 6;
-      arry[2] = 0;
-      arry[3] = 534;
-      arry[4] = 2;
-      
-<b> Other way to create single dimensional array </b>
- 
-    int[] arry = {2,445,566,23,353}; 
-
-
-<h3>Traversing an array </h3>
-
-     int[] arry = {2,445,566,23,353};
-
-     public static void traverseArray(int [] arry) {
-      try {
-        for(int i = 0; i <= arry.length - 1; i++) {
-          System.out.println("arry value is  :" + arry[i]);
-
-        }
-      }catch(Exception ex) {
-        System.out.println("Array do not exists.");
-      }
-    }
-    
-
-   
