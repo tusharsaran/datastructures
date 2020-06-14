@@ -1,9 +1,5 @@
 # Data structures:
-this repository is all about data structures.
-
-
-# What is Data structures
-DS is a way to 'organize data' in a way that enables it to be processed in an effiient time.
+Data Structure is a way to 'organize data' in a way that enables it to be processed in an effiient time.
 
 # Types of Data Structures:
 
