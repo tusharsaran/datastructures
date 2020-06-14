@@ -1,4 +1,4 @@
-package com.array.practice.sngleDimensionArray;
+package com.array.practice.singleDimensionArray;
 /*
  * Time complexity :
  * T(∞) =  O(n)

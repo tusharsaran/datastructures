@@ -1,4 +1,4 @@
-package com.array.practice.sngleDimensionArray;
+package com.array.practice.singleDimensionArray;
 
 public class TraversingArray {
 
