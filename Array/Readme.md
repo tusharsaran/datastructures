@@ -489,6 +489,42 @@ Lets say this is the memory before array got created
  
 
 <br><br>
- <h3> Time Complexity of an array </h3>
+ <h3> Time Complexity of an Single Dimensional Array </h3>
  
  ![](../images/git_image_array.png)
+ 
+ 
+ <br><br>
+ <h3> Time Complexity of Two Dimensional Array </h3>
+ 
+ ![](../images/git_image_2darray.png)
+
+
+<br><br>
+<h3>When to use Array</h3>
+
+- Where we have to multiple data like 2,4 10 100, 1000 or millions records
+- Data type should be similar like all the values are of type int, char, float , double etc..
+- when we want to do a Random access of any given data. Lets say in one dimensional array we have array like:
+
+<table>
+ <tr>
+ <td>5</td><td>2</td><td>67</td><td>4</td><td>186</td><td>42</td>
+ </tr>
+  </table>
+  
+  and we have to access any data in the cell lets say cell no 2 i.e value 67 and cell no 4 i.e. value 186 we can easily 
+  do that.
+  Time complexity of accessing the cell is O(1) - O(constant)
+  
+  Where as if we have to do it in Linked list we have to go through each cell to reach the particular cell number.
+  So the Time complexity in case of accessing cell via linked list is O(n).
+  
+  <br><br>
+  <h3>When to avoid Array</h3>
+  
+  - Biggest limitation of an array is that data are non- homogenous that means we can not store data with different data type.
+  - Before creating the array we have to provide the size of an array in advanced. Array cannot be grow.So cases where we dont   
+    have any idea what is the size of data, Array wil fail miserably. 
+    In those cases where we dont have any dea about the size of data use ArrayList or Linked list.
+  
