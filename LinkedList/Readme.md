@@ -10,29 +10,31 @@ two items:
 <br>
 <h3>Lets understand linked list using a Train example:</h3>
 
-![]https://docs.google.com/document/d/1JtIy4wf99iGA199vrirQr3fUz1KfxkCOxK-sY796VFc/edit?skip_itp2_check=true
+![](https://lh5.googleusercontent.com/orR7CuWTwWs8kqibLbWkCZbJ3f3CdC-6cU2GB1A8XtyCoC8dT29_9CD0Cw8evik03z4uZRKKbYlrXtxGopmr2prSQ0_mMlZ2XT65wnGQ)
 
 
 
-Now there are couple of things we have to notice here in the train:
-In this train we have one engine, 4 compartments and 1 guard room.
+<b> Now there are couple of things we have to notice here in the train: </b>
 
-Train always starts with an engine. It can never starts with guard room or compartments
-Guard room is always at the end of the train
-All the compartments, engine, gurad room are join with coupler
-In the compartment we have seats and those seats are reserved by the passengers.
-All the compartments are independent, that means if we dont need any compartment we can remove any compartment at any time, similarly we can add any compartment in any place in the train.What it means is that the compartments are individual separate entities and the existence of train does not depend on this compartment.
-We can enter in the compartment in a sequence manner what that mean is let say we have to go to compartment 3 so we cannot jump directly to the compartment we have to first enter engine and from their we have to enter compartment 2 and then compartment 3 and so on.
+- In this train we have one engine, 4 compartments and 1 guard room.
+- Train always starts with an engine. It can never starts with guard room or compartments
+- Guard room is always at the end of the train
+- All the compartments, engine, gurad room are join with coupler
+- In the compartment we have seats and those seats are reserved by the passengers.
+- All the compartments are independent, that means if we dont need any compartment we can remove any compartment at any time, similarly we can add any compartment in any place in the train.What it means is that the compartments are individual separate entities and the existence of train does not depend on this compartment.
+- We can enter in the compartment in a sequence manner what that mean is let say we have to go to compartment 3 so we cannot jump directly to the compartment we have to first enter engine and from their we have to enter compartment 2 and then compartment 3 and so on.
 
 
-Linked list is similar to this train and has the same properties.it always start from the first element and their will be last element in the linked list.
+<p>Linked list is similar to this train and has the same properties.it always start from the first element and their will be last element in the linked list.
 Each linked list has data (passengers in the compartment) and  reference is nothing but the couplers. 
-Linked list is a variable in size that means u can insert or remove an element or node anytime from the linked list.
+Linked list is a variable in size that means u can insert or remove an element or node anytime from the linked list.</p>
 
-E.g. of Linked list
+<b>E.g. of Linked list</>
 
+![](https://lh6.googleusercontent.com/V6p1VESavYhrGVhdzx0T0AZ4OLvdTeVRcdTMbDXowiZYZEGRanz8ClTnPBwFr7ujXrvCLDj3h-S59qpZZHAgoR3HELBG8-oF5M-4NiOK)
 
-
+<br> <br>
+![](https://lh3.googleusercontent.com/Lb3EUuJgyuFKOav2wSaazSzvh0sXwK-8GZ9JzbXbS802uwW_zdd_Gxv48tOs16I-Yr_DveRcbY_TZ473OOTtqswf0_wQwED8bojRhYJ9)
 
  
 
@@ -50,16 +52,16 @@ E.g. of Linked list
 
 
 
-Linked list vs Array:
+<b>Linked list vs Array:</b>
+
+![](https://lh6.googleusercontent.com/V6p1VESavYhrGVhdzx0T0AZ4OLvdTeVRcdTMbDXowiZYZEGRanz8ClTnPBwFr7ujXrvCLDj3h-S59qpZZHAgoR3HELBG8-oF5M-4NiOK)
+
+	VS
+
+![](https://lh3.googleusercontent.com/uJNs1U0o0En9rBbG4JdEEp9cH7qM7ge7Yjnkq2mhQq0_D20uotVi7EIjwfQUh438olwiahtypwAkpj_EJe4_27ofQt9tHLkvZ-rVw6k)
 
 
-
-				VS
-
-
-
-
-Separate Object: In Linked list each element or node is a separate or independent object but in case of Array the elements are not independent in fact the entire array is one object. What it means is let's say we have to insert or delete any elements or nodes from linked list then we can do that but the same is not possible in the case of Array.We cannot delete the cell in Array we can update the value in array
+<b>Separate Object: </b>In Linked list each element or node is a separate or independent object but in case of Array the elements are not independent in fact the entire array is one object. What it means is let's say we have to insert or delete any elements or nodes from linked list then we can do that but the same is not possible in the case of Array.We cannot delete the cell in Array we can update the value in array
 Variable size : in  Linked list the number of nodes are not defined we can insert and delete the nodes in linked list but in array we have to provide the size of the array before creating an array.
 Random access : In linked list we cannot access the node randomly or directly if we have to access any node in between then we have to start from the beginning and have to traverse to the node. In array we can access the element easily or directly. This is one of the biggest limitation in Linked List.
 
