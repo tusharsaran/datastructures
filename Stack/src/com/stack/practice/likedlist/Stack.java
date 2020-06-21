@@ -48,6 +48,7 @@ public class Stack<E> {
 	/**
 	 * pop/remove value from stack
 	 */
+	@SuppressWarnings("unused")
 	public void pop() {
 		if(top == null) {
 			throw new StackException("no stack created");
@@ -55,8 +56,10 @@ public class Stack<E> {
 			throw new StackException("stack underflow error");
 		}else {
 			System.out.println(top.data);
-			System.out.println("Successfully pop " + top.data + " from stack");
+			Node<E> current = top;
 			top = top.next;
+			System.out.println("Successfully pop " + current.data + " from stack");
+			current = null;
 			size --;
 		}
 	}
