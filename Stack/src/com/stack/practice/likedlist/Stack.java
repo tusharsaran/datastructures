@@ -12,7 +12,7 @@ import com.stack.practice.array.StackException;
  */
 public class Stack<E> {
 	
-	Node<E> head = null;
+	Node<E> top = null;
 	Node<E> tail = null;
 	int size = 0;
 	
@@ -21,10 +21,10 @@ public class Stack<E> {
 	 * @param size
 	 */
 	public void create(E data) {
-		if (head == null) {
+		if (top == null) {
 			Node<E> node = new Node<>(data);
-			head  = node;
-			tail = head;
+			top  = node;
+			tail = node;
 			size  ++;
 			System.out.println("Stack successfully cretaed");
 		}
@@ -35,18 +35,13 @@ public class Stack<E> {
 	 * @param data
 	 */
 	public void push(E data){
-		if(head ==  null) {
+		if(top ==  null) {
 			create(data);
 		}
-		Node<E> current  = head;
-		while(current.next != null) {
-			current = current.next;
-		}
 		Node<E> node = new Node<>(data);
-		current.next = node;
-		tail = node;
+		node.next = top;
+		top = node;
 		size ++;
-		
 		System.out.println("Successfully inserted " + data +  " in stack");
 	}
 	
@@ -54,13 +49,15 @@ public class Stack<E> {
 	 * pop/remove value from stack
 	 */
 	public void pop() {
-		if(head == null) {
+		if(top == null) {
 			throw new StackException("no stack created");
 		}else if (isEmptyStack()) {
 			throw new StackException("stack underflow error");
 		}else {
-			topOfStack --;
-			System.out.println("Successfully pop " + stack[topOfStack] + " from stack");
+			System.out.println(top.data);
+			System.out.println("Successfully pop " + top.data + " from stack");
+			top = top.next;
+			size --;
 		}
 	}
 	
@@ -68,7 +65,7 @@ public class Stack<E> {
 	 * is stack empty
 	 */
 	public boolean isEmptyStack() {
-		return (size == 0 ? true : false) ;
+		return (top == null ? true : false) ;
 	}
 
 
@@ -76,10 +73,8 @@ public class Stack<E> {
 	 * is stack empty
 	 */
 	public boolean isFullStack() {
-		if(stack != null) {
-			return (topOfStack  == stack.length - 1 ? true : false);
-		}
-		return false;
+			//return (topOfStack  == stack.length - 1 ? true : false);
+		return true;
 		
 	}
 	
@@ -87,8 +82,9 @@ public class Stack<E> {
 	 * delete stack
 	 */
 	public void delete() {
-		stack  = null;
-		topOfStack = -1;
+		top  = null;
+		tail = null;
+		size  = 0;
 		System.out.println("Stack successfully deleted");
 	}
 	
@@ -99,7 +95,7 @@ public class Stack<E> {
 		if(isEmptyStack()) {
 			return null;
 		}else {
-			return stack[topOfStack];
+			return top.data;
 		}
 	}
 	
