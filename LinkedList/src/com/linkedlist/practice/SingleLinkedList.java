@@ -15,9 +15,9 @@ import com.linkedlist.model.Node;
  */
 public class SingleLinkedList {
 
-	Node head = null;
-	Node tail = null;
-	int size = 0;
+	public Node head = null;
+	public Node tail = null;
+	public int size = 0;
 
 	/**
 	 * for creating a linked list
@@ -148,8 +148,6 @@ public class SingleLinkedList {
 		return current.data;
 	}
 
-	
-	
 	/**
 	 * retrieving the index from the list
 	 */
@@ -170,26 +168,24 @@ public class SingleLinkedList {
 		return current.data == data ? index++ : -1;
 	}
 
-	
 	/**
 	 * removing the first node from the list
 	 */
 	public void removeFirst() {
-		Node current  = head;
+		Node current = head;
 		head = current.next;
 		current = null;
-		
+
 		size--;
 	}
 
-	
 	/**
 	 * removing the last node from the list
 	 */
 	public void removeLast() {
-		Node current  = head;
+		Node current = head;
 		Node prev = null;
-		while (current !=  tail) {
+		while (current != tail) {
 			prev = current;
 			current = current.next;
 		}
@@ -197,15 +193,14 @@ public class SingleLinkedList {
 		tail = null;
 		size--;
 	}
-	
-	
+
 	/**
 	 * removing the node from the list based on the index
 	 */
 	public void remove(int index) {
 		int count = 0;
 		Node prev = null;
-		Node current =  head;
+		Node current = head;
 		while (count < index - 1) {
 			prev = current;
 			current = current.next;
@@ -215,8 +210,41 @@ public class SingleLinkedList {
 		current = null;
 		size--;
 	}
-	
-	
+
+	/**
+	 * traversing linked list using Recursion
+	 */
+	 public  void traversingLinkedListByRecursion(Node node) {
+		if(head ==  null) {
+			System.out.println("linked list is empty");
+		}
+		if(node == null) {
+			return;
+		}else {
+			System.out.println("Node data is "+ node.data);
+			System.out.println("Next node is "+ node.next);
+			traversingLinkedListByRecursion(node.next);
+			
+		}
+	}
+	 
+		/**
+		 * traversing linked list in reverse using Recursion
+		 */
+		 public  void traversingReverseLinkedListByRecursion(Node node) {
+			if(head ==  null) {
+				System.out.println("linked list is empty");
+			}
+			if(node == null) {
+				return;
+			}else {
+				traversingReverseLinkedListByRecursion(node.next);
+				System.out.println("Next node is "+ node.next);
+				System.out.println("Node data is "+ node.data);
+				
+				
+			}
+		}
 	// TODO addall, addall, contains , contains all
 
 }
