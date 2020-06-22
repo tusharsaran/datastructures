@@ -18,6 +18,7 @@ public class SingleLinkedList {
 	public Node head = null;
 	public Node tail = null;
 	public int size = 0;
+	public Node tempNode  = null;
 
 	/**
 	 * for creating a linked list
@@ -229,7 +230,8 @@ public class SingleLinkedList {
 	}
 	 
 		/**
-		 * traversing linked list in reverse using Recursion
+		 * traversing linked list in reverse order using Recursion
+		 * reverse order means we are just printing the values
 		 */
 		 public  void traversingReverseLinkedListByRecursion(Node node) {
 			if(head ==  null) {
@@ -245,6 +247,96 @@ public class SingleLinkedList {
 				
 			}
 		}
+		 
+		 /**
+		  * reversing the linked list using iterative approach
+		  * head 000 --> 2|001     6|002   	5|003   4|null		<----- tail
+		  * head 003 --> 4|002     5|001   	6|000	2|null		<----- tail
+		  * Time complexity: O(n)
+		  * Space complexity : O(1)
+		  */
+		 public void reverseLinkedList() {
+			 if(head ==  null) {
+				 System.out.println("linked list is empty");
+			 }
+			 //000
+			 Node current =  head;
+			 Node prev = null;
+			 Node temp = null;
+			 while(current != null) {
+				 temp = current;
+				 current = current.next;
+				 temp.next = prev;
+				 prev = temp;
+			 }
+			 head = prev;
+			 
+		 }
+		 
+		 
+		 /**
+		  * reversing the linked list using recursive approach
+		  * head 000 --> 2|001     6|002   	5|003   4|null		<----- tail
+		  * head 003 --> 4|002     5|001   	6|000	2|null		<----- tail
+		  * 
+		  * Time complexity: O(n)
+		  * Space complexity : O(n)
+		  */
+		 public void reverseLinkedListRecursion(Node headNode) {
+			 
+			 Node current =  headNode;
+			 //Node prev = null;
+			 Node temp = null;
+			 
+			 if(current.next == null) {
+				 head  = headNode;
+				 return;
+			 }
+			 else {
+				reverseLinkedListRecursion(current.next);
+				temp =  current.next;
+				temp.next = current;
+				current.next = null;
+			 }
+			 
+		 }
+		 
+		 
+		 
+		 /**
+		  * reversing the linked list using recursive approach
+		  * head 000 --> 2|001     6|002   	5|003   4|null		<----- tail
+		  * head 003 --> 4|002     5|001   	6|000	2|null		<----- tail
+		  * 
+		  * Time complexity: O(n)
+		  * Space complexity : O(n)
+		  */
+		 public void reverseAnotherApproach(Node headNode) {
+			 
+			 Node current =  headNode;
+			 //Node prev = null;
+			 
+			 if(current.next == null) {
+				 head  = headNode;
+				 tempNode = head;
+				 return;
+			 }
+			 else {
+				 tempNode =  current;
+				 reverseAnotherApproach(current.next);
+				tempNode.next = current;
+				tempNode = current;
+				tempNode.next  = null;
+			 }
+			 
+		 }
 	// TODO addall, addall, contains , contains all
+		 
+		// 4|null
+		 //5|003
+		 //6|002  
+		// 2|001 - prev  - null
+		 //main
+		
 
 }
