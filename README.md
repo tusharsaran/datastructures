@@ -44,6 +44,8 @@ other Logical DS.
 # Topics covered in DS 
   - Section 1: RECURSION
   - Section 2 : ARRAY
+  - Section 3 : LINKED LIST
+  - Section 4 : STACK
 
 
  
