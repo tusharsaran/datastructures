@@ -67,7 +67,9 @@ It is implemeneted using the Physical data strture (like Stack) i.e.
     - else if beginingQueue !=  endQueue then  `beginingQueue =  beginingQueue  + 1`;
     - else if beginingQueue ==  endQueue  then `endQueue == -1 && beginingQueue == -1`
  
- 
+ 7. peekInQueue ()
+    - if the queue is empty that means `endQueue == -1 && beginingQueue == -1`  exit from method
+    - else  `return queue[beginingQueue]`;
  
  
  
