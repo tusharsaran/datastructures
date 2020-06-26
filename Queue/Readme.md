@@ -54,12 +54,12 @@ It is implemeneted using the Physical data strture (like Stack) i.e.
                                                          
  5. enQueue(data):
     - if the queue is Full that means `endQueue ==  array.length`  exit from method
-    -  else create queue :  `queue[endQueue + 1] = data`;
     - if the queue is empty than  beginingQueue and endQueue both are -1 
          -  point `beginingQueue == endQueue + 1` 
          -  point `endqueue ==  endQueue + 1` 
-    -  if queue is not empty than 
-        point `endqueue == endQueue + 1` 
+    -  else
+         insert in queue :  `queue[endQueue + 1] = data`;
+         point `endqueue == endQueue + 1` 
                         
 
  6. deQueue():
@@ -129,13 +129,47 @@ It is implemeneted using the Physical data strture (like Stack) i.e.
                One last example: this time we have all the elements in array full with data, this time the beginingQueue is pointing to the 0th cell
                [6][2][1][4][9]
                
-               => (4 + 1) % 5 == 0
+                => (4 + 1) % 5 == 0
                 => 5 % 5 == 0
                 => 0 == 0     =>  Queue is Full 
 
-     6.enQueue (insert) - 
-     7.deQueue (remove)
+     6.enQueue (insert) -  here the concept is also slightly change, lets see:
+     
+                Algo:
+                - if the queue is Full that means `(endQueue + 1) % N == beginingQueue`  exit from method  ----> this is same
+                - if the queue is empty than  beginingQueue and endQueue both are -1  ----> this is same
+                    -  point `beginingQueue == endQueue + 1` (i.e. 0)
+                    -  point `endqueue ==  endQueue + 1` (i.e. 0)
+                -  else
+                        -  insert in queue :  `queue[(endQueue + 1) % N]  = data`;
+                        -  point `endqueue == [endQueue + 1] % N` 
+     
+              lets see with the same example: 
+              here we way array of 5 that has only 3 element and the `endQueue is pointing to 5th element i.e. [9]` and `beginingQueue pointing to 2nd        
+              element i.e.[1]`
+          
+              [][][1][4][9]
+              
+              now we will enque one record i.e. 45
+              
+                -> so it will go to first condition if queue is full it is not here queue is not full so it will skip this condition also 
+                -> then it will check it it is empty queue here queue is not empty so it will skip this condition also
+                -> it will insert a record in queue based on the following formulae:
+                    - `queue[(endQueue + 1) % N]  = data`
+                    => queue[(4 + 1) % 5]  = 45
+                    => lets calculate the inner formulae i.e (endQueue + 1) % N , here endqueue is pointing to cell 4 and N =  total size of array
+                    => (endQueue + 1) % N =>  (4 + 1) % 5
+                    =>  (4 + 1) % 5 =>  5 % 5 = 0
+                    => queue[0] = 45
+     
+     
+     7.deQueue (remove) : here dequeue also has slightly concept, lets see
+     
+                - if the queue is empty that means `endQueue == -1 && beginingQueue == -1`  exit from method -- it is same and nothing to change
+                - else if beginingQueue ==  endQueue  then `endQueue ==  && beginingQueue == -1`-- it is same and nothing to change
+                - else if beginingQueue !=  endQueue then  `beginingQueue =  (beginingQueue + 1) % N`;
+                
 
- 
+                [][][1][4][9]
  
  
