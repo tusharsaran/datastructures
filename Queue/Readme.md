@@ -189,7 +189,7 @@ It is implemeneted using the Physical data strture (like Stack) i.e.
                                      => 3 % 5
                                      => 3 - (5 * 0)
                                      => 3  - 0
-                                     => 3.
+                                     => 3
                                  
                                  
  
