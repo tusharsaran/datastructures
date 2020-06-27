@@ -169,7 +169,27 @@ It is implemeneted using the Physical data strture (like Stack) i.e.
                 - else if beginingQueue ==  endQueue  then `endQueue ==  && beginingQueue == -1`-- it is same and nothing to change
                 - else if beginingQueue !=  endQueue then  `beginingQueue =  (beginingQueue + 1) % N`;
                 
-
-                [][][1][4][9]
- 
+                
+                Lets check the dequeue funtionality, here we will take the same example:
+                    
+                [][][1][4][3]
+                
+                now we will invoke deque it will go to the code and check :
+                - if the queue is empty no it is not so it will skip this condition
+                - if beginingQueue ==  endQueue here beginingQueue is pointing to cell 2 and endqueue is pointing to cell 4 so it will skip this condition
+                - if beginingQueue !=  endQueue this condition is true as beginingQueue is pointing to cell 2 and endqueue is pointing to cell 4 and they are not 
+                equal so it will deque the element based on the formulae:
+                beginingQueue =  (beginingQueue + 1) % N
+                => beginingQueue = (2 + 1) % 5
+                                 = 3 % 5 
+                                 = 3 (3 % 5 = 3 and not 0 or 0.6 why lets see 
+                                     if the operation is 12 % 5 then 5 * 2 = 10 which is smaller than 12 and 5 * 3 = 15 so we will take 5 * 2 = 10
+                                     so 12  - 10 = 2 
+                                     similarly for any first digit smaller than the second digit it will multiply by 0 so in this case it will be
+                                     => 3 % 5
+                                     => 3 - (5 * 0)
+                                     => 3  - 0
+                                     => 3
+                                 
+                                 
  
