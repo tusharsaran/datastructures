@@ -285,6 +285,6 @@ Now when you create a node it will have:
  <br>
  
   ![](../TimeComplexity/images/Queue_TimeComplexity.png)
-  ![](../images/git_image_2darray.png)
+
  
  
