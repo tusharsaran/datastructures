@@ -229,6 +229,8 @@ It is implemeneted using the Physical data strture (like Stack) i.e.
  
 <h2>Lets see the algo of Queue via Linked List:</h2>
 
+<b>Note: We dont have a concept of Circular Queue in List as we can add as many element in the queue using linked list also when we deque the position will point to the next element.</b>
+
 Here we will create a node that has:
 a. data ->  data to save.
 b. next --> pointing to the address of next node
