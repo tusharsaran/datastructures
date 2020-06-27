@@ -240,42 +240,60 @@ Now when you create a node it will have:
 
 - head node  -  beginingQueue
 - tail node - endQueue
+- size - number of nodes or data added
         
 1. createQueue(size):
-    - create a node
-    - head point to null
-    - tail poin to null
+    - `create a head node`
+    - `tail point to head`
+    - `size ++`
     
  
  2. isEmpty
-    - if head ==  null && tail == null it is empty
- 
- 
- 3. isFull
+    - if `head ==  null && tail == null` it is empty
+
     
-    
- 4. deleteQueue
-    - make `queue = null`
+ 3. deleteQueue
+    - make `head = null , tail = null and size = 0`
           
                                                          
- 5. enQueue(data):
-    - if the queue is Full that means `endQueue ==  array.length`  exit from method
-    - if the queue is empty than  beginingQueue and endQueue both are -1 
-         -  point `beginingQueue == endQueue + 1` 
-         -  point `endqueue ==  endQueue + 1` 
+ 4. enQueue(data):
+    - if the queue is Empty call create method 
     -  else
-         insert in queue :  `queue[endQueue + 1] = data`;
-         point `endqueue == endQueue + 1` 
-                        
-
- 6. deQueue():
-    - if the queue is empty that means `endQueue == -1 && beginingQueue == -1`  exit from method
-    - else if beginingQueue !=  endQueue then  `beginingQueue =  beginingQueue  + 1`;
-    - else if beginingQueue ==  endQueue  then `endQueue == -1 && beginingQueue == -1`
+         - create a new node for that data
+         - tail address should point to the new node
+         - now tail should be pointing to new node
+         - size ++; 
+         
+         Lets take an example here we have a following node
+         
+         head --> 2|100     76|150      55|200      43|null   <--------tail          
+         
+         now we have to enqueue data 25 
+         so we will:
+         - check if node is empty , no it is not so it will skip
+         - next it will create a node - 25|null (lets say address of this node is 250)
+         - next tail address i.e. 43|null (null) should point to this address(250) so after calling this step it will become :
+             head --> 2|100     76|150      55|200      43|250 (<--tail)    25|null
+         - now tail should be pointing to new node i.e. 
+          head --> 2|100     76|150      55|200      43|250     25|null  <--------------tail
+         - size = current size + 1
+         
+         
+ 5. deQueue():
+    - if the queue is empty exit from method or throw an exception
+    - else create a temp node pointing to head node
+    - make head = null
+    - next head node address should point temp.next i.e. next node address
+    - check if head afyter pointing to temp.next i.e. next node address i equal to null that means head is currently in the last node and a deque operation is 
+    invoked then it that case head = temp.next (temp.next is null) so head = null.
+    If head is equal to null then make tail = null
+    -   size = current size - 1
+    
  
- 7. peekInQueue ()
-    - if the queue is empty that means `endQueue == -1 && beginingQueue == -1`  exit from method
-    - else  `return queue[beginingQueue]`;
+ 
+ 6. peekInQueue ()
+    - if the queue is empty that means `head ==  null && tail == null`  exit from method or throw an exception
+    - else  `return head.data`;
  
  
  
