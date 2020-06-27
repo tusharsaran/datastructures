@@ -283,6 +283,6 @@ Now when you create a node it will have:
  <h2>Time Complexity of Queue via Linked List or Array</h2>
  
  <br>
-  ![](../TimeComplexity/images/Queue_TimeComplexity.png)
+  ![](../../TimeComplexity/images/Queue_TimeComplexity.png)
  
  
