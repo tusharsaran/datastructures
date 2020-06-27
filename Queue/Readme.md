@@ -1,8 +1,13 @@
 <h2> Queue </h2>
 
-Queue is a linear data structure that follows the concept of FIFO (First in first out).
-Queue is same like a real world queue where u have group of people, numbers , elements etc are there and the  one enter first in the queue be the one who will
-be out first. 
+<p>Queue is a linear data structure that follows the concept of <b>FIFO (First in first out)</b>.<p>
+<p>Queue is same like a real world queue where u have group of people, numbers , elements etc are there and the  one enter first in the queue be the one who will
+be out first.</p>
+
+<br> 
+<h3> Queue in real world example </h3>
+
+![](images/real_world_queue_example.png)
 
 In the queue you can only enter from the last. One cannot enter from first or in between.
 
