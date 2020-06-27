@@ -191,5 +191,97 @@ It is implemeneted using the Physical data strture (like Stack) i.e.
                                      => 3  - 0
                                      => 3
                                  
-                                 
+  
+  
+  <br><br>
+  <h2>Queue via Linked List</h2>
+  
+ In this we are going to implement queue using linked list. It has the same operations covered in arrays.
+ Now before we see the psuedocode to implement those operations we need to understand what are the advantages/disadvantages we are getting using Linked List.
+ 
+        Now when we implement with array let see what are the advantages or disadvantages we will get:
+        
+        say we have a queue like this
+        [23][5][1][4][3] --->  that is the queue is full
+        
+        1. Now there is a disadvntage and that is if we want to enque element in a queue then :
+            a. either we will say queue is full coz array size cannot be increased or
+            b. create another array with extra size and then copy the entire array and place in this new array(with extra size). But the problem with that is 
+            that copy and adding the records in new array is expensive as the Time complexity it will take is O(n). Thats why  Linked list has an advantage over 
+            it.
+            
+        2.Now lets take another example :
+          [23][][][][][][][][][][][][]  - array with only one element.
+          
+          Now the problem with such kind of array is that it is unnecessary taking extra space or memory and thats why Linked list has an advantage over it.
+            
+        
+      3. Lets take another array  [23][5][1][4][3][]
+       now the advantage of array over linked list is in case i want to search for any cell I dont have to traverse from the start like in the case of linked list
+       we can easily search/pick the array as we know the stating point/address and the last address of the array. 
+       This is not easy in Linked List and to get any element other than first element one has to :
+       a. either traverse from one element to another element till we get the desired element. Now the problem with such kind of traversing is that it is costly as 
+          the time complexity for traversing is O(n).
+       b. there is other way also where you define the logic in such a manner that the search will be order of constant (O(1)) instead of O(n).
+        
+ 
+ <br> <br>
+ 
+<h2>Lets see the algo of Queue via Linked List:</h2>
+
+Here we will create a node that has:
+a. data ->  data to save.
+b. next --> pointing to the address of next node
+
+<br>
+Now when you create a node it will have:
+
+- head node  -  beginingQueue
+- tail node - endQueue
+        
+1. createQueue(size):
+    - create a node
+    - head point to null
+    - tail poin to null
+    
+ 
+ 2. isEmpty
+    - if head ==  null && tail == null it is empty
+ 
+ 
+ 3. isFull
+    
+    
+ 4. deleteQueue
+    - make `queue = null`
+          
+                                                         
+ 5. enQueue(data):
+    - if the queue is Full that means `endQueue ==  array.length`  exit from method
+    - if the queue is empty than  beginingQueue and endQueue both are -1 
+         -  point `beginingQueue == endQueue + 1` 
+         -  point `endqueue ==  endQueue + 1` 
+    -  else
+         insert in queue :  `queue[endQueue + 1] = data`;
+         point `endqueue == endQueue + 1` 
+                        
+
+ 6. deQueue():
+    - if the queue is empty that means `endQueue == -1 && beginingQueue == -1`  exit from method
+    - else if beginingQueue !=  endQueue then  `beginingQueue =  beginingQueue  + 1`;
+    - else if beginingQueue ==  endQueue  then `endQueue == -1 && beginingQueue == -1`
+ 
+ 7. peekInQueue ()
+    - if the queue is empty that means `endQueue == -1 && beginingQueue == -1`  exit from method
+    - else  `return queue[beginingQueue]`;
+ 
+ 
+ 
+ 
+ <br> <br> 
+ 
+ <h2>Time Complexity of Queue via Linked List or Array</h2>
+ 
+ 
+ 
  
