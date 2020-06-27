@@ -84,6 +84,7 @@ public class CircularQueueMain {
 		//is queue empty 
 		System.out.printf("%s%n","Is queue empty : " + cQueue.isEmpty());
 	
+		cQueue.deQueue();
 		cQueue.enQueue(102);
 		
 		for(int  i = 0;  i < cqMain.size; i ++) {
