@@ -47,6 +47,7 @@ other Logical DS.
   - Section 3 : LINKED LIST
   - Section 4 : STACK
   - Section 5 : QUEUE --- completed
+  - Section 6 : TREE
 
  
  
