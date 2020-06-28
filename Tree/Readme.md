@@ -28,3 +28,25 @@ OR another example is of folder structure in computer
 - Represents data in hierachicalform 
 - Each node consist of 2 elements (Data and reference of subtree node)
 - It has a root node and 2 subtree called left tree and right tree
+
+
+
+<br><br>
+<h3>Need of Tree in Data structure</h3>
+
+<p>IS Array and Linken List not sufficient for data stucture ?</p> 
+<p> Why do we need a tree and what advantage it will give that the other data structure specially Array and Linked List does not have. To understand this lets see the time complexity and the space complecity of Array and Linked List : </p>
+<br>
+
+![](../TimeComplexity/images/TimeComplexity_Array&LinkedList.png)
+
+<br>
+
+<p>In array, If you notice the space efficiency is not good i.e once you created an array you cannot increase the array. For that you have to create a new array with extra space and copy the current array and place it in the new array which is a very costly operation.</p>
+<p> Similarly in Linked List some of the operations like insertion, deletion, searching, traversing is a costly operation (Time Complexity is O(n))</p> 
+  
+  
+ Because of these issue we need a data structure that is cost and space efficient and therefore we introcuced Tree.
+
+
+
