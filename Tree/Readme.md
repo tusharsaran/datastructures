@@ -198,3 +198,79 @@ For e.g. Height of 1 is 3  as 11 is the longest path and it has 3 edges.
 <br>
 
 ![](images/tree_linkoredges.png)
+
+
+<br><br>
+
+<h3>Some of the applications where we use tree </h3>
+
+- Storing data in heirarchical mannr-  like file system.
+- Organize data for quick search, insertion or deletion  using Binary search trees as it uses Time complexity of O(log n)
+- Special type of Tree called `Trie` used to store Dictionary, it is really fast and used for Dynamic spell checking.
+- Network routing algorithm
+
+
+<h2> Binary Tree</h2>
+
+Trees that has zero, one or 2 nodes are known as Binary tree.
+
+<br>
+  
+![](images/binary_tee.png)
+
+<br>
+
+      - If you see the above diagram root has 2 children also know as left child or right child.
+      - Similary root children(both) has 2 children each.
+      - Node in Orange color in the extreme left has one child only that is the right child. So 
+      in the code we will add the reference for the left child as `NULL`. Similarly if you notice 
+     - Node in Orange color in the extreme right also has one child that is the left child so for  
+      right we will add the reference in node as null.
+     - All the leaf nodes in black color consist of zero node.
+
+
+
+<p> there are trees that are completely vased on Binary tree like:
+  
+  - Binary Search Tree
+  - Heap Tree
+  - AVL
+  - Red-Black tree
+  - Syntax tree
+  - Huffman Coding tree
+  etc...
+  
+<br>
+<b>Why to learn Trees </b>
+
+- It is a prerequisite for other trees like BST, AVL, Heap tree etc..
+- Used for solving problems like
+    - Huffman coding
+    - Heap(priority Queue)
+    - Expression parsing
+    
+ <br> <br>   
+<h3> Types Of Binary Tree </h3>
+
+- <b>Strict Binary Tree<b> : A tree in which the nodes consists of 2 children (left and right child) or none.
+  
+  <br>
+  
+![](images/strict_binary_tee.png)
+
+<br>
+
+- <b>Full Binary Tree<b> : A tree in which all the non leaf nodes consists of 2 nodes(right tree and left tree) and all the leaf node be at same level.
+  
+  <br>
+  
+![](images/full_binary_tee.png)
+
+
+<br>
+
+- <b>Complete Binary Tree<b> : A tree in which all the non leaf nodes consists of 2 nodes(right tree and left tree) and all the leaf node be at same level.
+  
+  <br>
+  
+![](images/full_binary_tee.png)
