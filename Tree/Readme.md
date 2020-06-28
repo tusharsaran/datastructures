@@ -216,7 +216,7 @@ Trees that has zero, one or 2 nodes are known as Binary tree.
 
 <br>
   
-![](images/binary_tee.png)
+![](images/binary_tree.png)
 
 <br>
 
@@ -264,7 +264,7 @@ Trees that has zero, one or 2 nodes are known as Binary tree.
   
   <br>
   
-![](images/full_binary_tee.png)
+![](images/full_binary_tree.png)
 
 
 <br>
@@ -273,4 +273,4 @@ Trees that has zero, one or 2 nodes are known as Binary tree.
   
   <br>
   
-![](images/full_binary_tee.png)
+![](images/full_binary_tree.png)
