@@ -163,3 +163,38 @@ Similarly we have some more subtrees like for node 3 we have left subtree (node 
 ![](images/tree_subtree.png)
 
 <br>
+
+- <b><i>Depth of node(x):</i></b> is the length from root to node x or we can also say the number of edges to root x. Let say we have to calculate the depth of node 5 then it is 2
+
+![](images/tree_linkoredges.png)
+
+<br>
+
+- <b><i>Depth of root:</i></b> is always 0
+
+
+<br>
+
+![](images/tree_linkoredges.png)
+
+
+<br>
+
+- <b><i>Height of node(x):</i></b> is the number of edges in the longest path from node x to the the leaf.
+
+For e.g. Height of 3 is 2 as 3 has two leaf 8 and 11 the longest path of leaf is 11. Therefore the height is 2 (due to 2 edges from 3 to 11)
+
+<br>
+
+![](images/tree_linkoredges.png)
+
+
+<br>
+
+- <b><i>Height of tree:</i></b> is the number of edges in the longest path from root to the the leaf.
+
+For e.g. Height of 1 is 3  as 11 is the longest path and it has 3 edges.
+
+<br>
+
+![](images/tree_linkoredges.png)
