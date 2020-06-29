@@ -252,7 +252,7 @@ Trees that has zero, one or 2 nodes are known as Binary tree.
  <br> <br>   
 <h3> Types Of Binary Tree </h3>
 
-- <b>Strict Binary Tree<b> : A tree in which the nodes consists of 2 children (left and right child) or none.
+- <b>Strict Binary Tree</b> : A tree in which the nodes consists of 2 children (left and right child) or none.
   
   <br>
   
@@ -260,7 +260,7 @@ Trees that has zero, one or 2 nodes are known as Binary tree.
 
 <br>
 
-- <b>Full or Perfect Binary Tree<b> : A tree in which all the non leaf nodes consists of 2 nodes(right tree and left tree) and all the leaf node be at same level.
+- <b>Full or Perfect Binary Tree</b> : A tree in which all the non leaf nodes consists of 2 nodes(right tree and left tree) and all the leaf node be at same level.
   
   <br>
   
@@ -269,7 +269,7 @@ Trees that has zero, one or 2 nodes are known as Binary tree.
 
 <br>
 
-- <b>Complete Binary Tree<b> : A tree in which all the levels are filled except the last level and in the last level all the left nodes are filled.
+- <b>Complete Binary Tree</b> : A tree in which all the levels are filled except the last level and in the last level all the left nodes are filled.
   
   <br>
   
