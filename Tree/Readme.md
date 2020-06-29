@@ -353,3 +353,100 @@ if we take the below tree then the formulae will be:
  <br>
 <b>Balanced Binary tree</b>
 <p> is a tree where the difference between the height of left and right subtree for every node should ot be more than 1.
+  
+  
+<br><br>  
+<h3>Tree Representation </h3>
+
+<p>Tree can be implemented using:</p>
+
+- Linked List
+- Array
+
+
+<br><br><br>
+
+<b>Tree Representation using Linked List</b> : 
+
+Here while implementing the tree using Linked list we will :
+
+- we will add following elements in Node
+  - data - for storing data 
+  - left -  pointing the reference or address of the left subtree
+  - right - pointing the reference or address of the right subtree
+  
+<br>
+
+![](images/tree_linkedlist.png)
+
+
+<br><br>
+
+<b>Tree Representation using Array</b> :  
+
+<p> Tree is implemented using array if it is:
+    
+- Complete Binary Tree
+- Heap Binary Tree
+
+
+<p>Let say we have a tree like :</p>
+
+<br>
+
+![](images/tree_array.png)
+
+<br>
+
+Here while implementing the tree using array we will :
+
+- first we will add the numbers to the trees starting from the root and going level to level from left to right
+
+<br>
+
+![](images/tree_array_number.png)
+
+<br>
+
+- let say the total number of array comes to 7 then we will create an array of size 7.
+
+<br>
+
+![](images/tree_array_number2.png)
+
+<br>
+- Next we will fill the data in the array
+
+
+<br>
+
+![](images/tree_array_data.png)
+
+<br>
+- After filling the data in the array , how do we identify the left node and the right node. Well for that we will define the following formulae:
+
+      for node at index i  : 
+          left - child index =  cell[2*i + 1]
+          right - child index = cell[2*i + 2]
+          
+          now to get the node at cell 1 at left subtree it will be:
+          =>  cell[2 * 0 +  1]
+          =  cell[0 + 1]
+          = cell[1]
+          
+          for cell 2 at right subree:
+           =>  cell[2 * 0 +  2]
+            =  cell[0 + 2]
+            =  cell[2]
+
+          now for cell 3 at left subtree
+          =>  cell[2*1 + 1]
+          =>  cell[3]
+
+          now for cell 4 at right subtree
+          =>  cell[2*1 + 2]
+          =>  cell[4]
+ 
+  
+
+    
