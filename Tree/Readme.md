@@ -260,7 +260,7 @@ Trees that has zero, one or 2 nodes are known as Binary tree.
 
 <br>
 
-- <b>Full Binary Tree<b> : A tree in which all the non leaf nodes consists of 2 nodes(right tree and left tree) and all the leaf node be at same level.
+- <b>Full or Perfect Binary Tree<b> : A tree in which all the non leaf nodes consists of 2 nodes(right tree and left tree) and all the leaf node be at same level.
   
   <br>
   
@@ -269,8 +269,87 @@ Trees that has zero, one or 2 nodes are known as Binary tree.
 
 <br>
 
-- <b>Complete Binary Tree<b> : A tree in which all the non leaf nodes consists of 2 nodes(right tree and left tree) and all the leaf node be at same level.
+- <b>Complete Binary Tree<b> : A tree in which all the levels are filled except the last level and in the last level all the left nodes are filled.
   
   <br>
   
-![](images/full_binary_tree.png)
+![](images/complete_binary_tree.png)
+
+
+
+<br>
+<b>Calculating the max nodes at a level in a binary tree</b>
+
+formulae  = level i = 2(to the power i)
+
+Lets take the below node: in below tree  if you see there are four level
+Level 0 = root
+Level 1 = root children 
+Level 2 = root grand children 
+Level 3 = root great grand children (or last level)
+
+so if we have to calculate the max level of tree : 
+=> level i  = 2^i
+=> level 3 = 2^3
+=> level 3 =  8 so we have at max 8 nodes at level 3.
+ 
+ <br>
+  
+![](images/complete_binary_tree.png)
+
+
+<br>
+<b>Calculating the max number of nodes in a binary tree with height h</b>
+
+    max number of nodes with height h  =  2^0 + 2^1 + 2^2 ...... 2 ^h
+                                              OR 
+                                          2^h+1 -  1    
+
+if we take the below tree then the formulae will be:
+
+     max number of nodes with height h  =  2^0 + 2^1 + 2^2 + 2 ^ 3 (as we have level 3)
+                                        =  1 + 2 + 4 + 8
+                                        =  15
+     Also the same we can calculate with a simple formulae  =  2^(h+1) - 1 
+                  (the max height is 3)                     =  2^(3+1)  - 1
+                                                            = 2^4 - 1
+                                                            = 16 - 1 
+                                                            = 15
+      
+      `max Depth of the tree = height of the 3` 
+
+     
+<br>
+  
+![](images/complete_binary_tree.png)
+    
+
+<br>
+<b>Calculating the height of a perfect/full binary tree with n nodes</b>
+
+
+      n =  2^h+1 - 1
+      => 2^h + 1  = n + 1
+      => h = log2(n + 1) -1    -------------> this is the formulae
+      
+      now lets say in a perfect binary tree we have 15 modes and we have to calculate the height
+      =>  h = log2(n + 1) -1 
+      =>  h = log2(15 + 1)- 1
+      =>  h = log2(16) - 1
+      =>  h = 4 - 1
+      =>  h = 3 is the answer
+      
+<br>
+<b>Calculating the height of a complete binary tree with n nodes</b>
+     
+       nodes = 15
+       formulae =  Math.floor(log2 n)
+                = Math.floor(log2 15)
+                = Math.floor(log2 15)
+                = Math.floor(3.906891)
+                = 3
+ 
+ 
+ <br>
+<b>Balanced Binary tree</b>
+<p> is a tree where the difference between the height of left and right subtree for every node should ot be more than 1.
