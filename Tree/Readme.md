@@ -469,20 +469,20 @@ Here while implementing the tree using array we will :
 
 <b> Operations implemented using Linked List </b>
 
-1. Create a binary tree : is really simple just create an object of Binary Tree. No need to insert any record.
+1. <b><u>Create a binary tree :</u></b> is really simple just create an object of Binary Tree. No need to insert any record.
 
  <b><i>pseudo code:</i></b>
   
       BinaryTree bt = new BinaryTree();
 <br>
-2. delete a binary tree: set the root or head to null
+2. <b><u>delete a binary tree :</u></b> set the root or head to null
   
  <b><i>pseudo code:</i></b>
   
       root = null;
   <br>    
  
- 3.  preOrder traversal :  we will use `Recurssion (recurrsion uses STACK)` for pre order traversal
+ 3.  <b><u>preOrder traversal :</u></b>  we will use `Recurssion (recurrsion uses STACK)` for pre order traversal
  
  In pre order the way we traverse the tree is :
       
@@ -501,7 +501,7 @@ Here while implementing the tree using array we will :
         preOrder(root.right)
       
  <br>    
- 4. inOrder traversal : again we will use `Recurssion (recurrsion uses STACK)` for inOrder traversal
+ 4. <b><u>inOrder traversal :</u></b> again we will use `Recurssion (recurrsion uses STACK)` for inOrder traversal
  
 the way we traverse the tree is :
       
@@ -521,7 +521,7 @@ the way we traverse the tree is :
 
 <br>
 
- 5. postOrder traversal : again we will use `Recurssion (recurrsion uses STACK)` for postOrder traversal
+ 5. <b><u>postOrder traversal :</u></b> again we will use `Recurssion (recurrsion uses STACK)` for postOrder traversal
  
 the way we traverse the tree is :
       
@@ -541,7 +541,7 @@ the way we traverse the tree is :
         preOrder(root.right)
 
 <br>
- 6. levelOrder traversal : we will use `QUEUE` for levelOrder traversal
+ 6. <b><u>levelOrder traversal :</u></b> we will use `QUEUE` for levelOrder traversal
  
 the way we traverse the tree is :
       
@@ -589,8 +589,8 @@ the way we traverse the tree is :
      
  <br>  
  
- 7. insert :  inserting data in a tree. Here we will use the same logic applied for levelOrder traversal i.e. Queue. We will go level to level and find the first        
-    empty subtree and insert the data in that tree.
+ 7. <b><u>insert :</u></b>  inserting data in a tree. Here we will use the same logic applied for levelOrder traversal i.e. Queue. We will go level to level and 
+    find the first empty subtree and insert the data in that tree.
     
  <br>
     
@@ -626,7 +626,7 @@ the way we traverse the tree is :
  <br>
  
  
- 8. search : searching  a value from tree. We will again use levelOrder traversal (i.e.Queue) for the search.
+ 8. <b><u>search :</u></b> searching  a value from tree. We will again use levelOrder traversal (i.e.Queue) for the search.
  
     
  <b><i>pseudo code:</i></b>
@@ -644,7 +644,7 @@ the way we traverse the tree is :
             
  
  
-  9. getDeepestNode : finding the deepest node in tree and return the data. Here we will use the levelOrder traversal and Queue. 
+  9. <b><u>getDeepestNode :</u></b> finding the deepest node in tree and return the data. Here we will use the levelOrder traversal and Queue. 
  
     
  <b><i>pseudo code:</i></b>
@@ -664,7 +664,7 @@ the way we traverse the tree is :
     
     
  
-  10. deleteDeepestNode : deleting the deepest node in tree and return the data. Here we will use the levelOrder traversal and Queue. 
+  10. <u><b>deleteDeepestNode :</b></u> deleting the deepest node in tree and return the data. Here we will use the levelOrder traversal and Queue. 
  
     
  <b><i>pseudo code:</i></b>
