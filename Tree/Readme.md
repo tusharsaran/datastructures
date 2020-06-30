@@ -448,5 +448,189 @@ Here while implementing the tree using array we will :
           =>  cell[4]
  
   
+<br>
+<h3> Operations in Binary Tree</h3>
 
+- create a binary tree
+- delete a binary tree
+- insert a data in binary tree
+- remove a node from binary tree
+- search a data in binary tree
+- traversing a binary tree
+  - preOrder Traversal
+  - inOrder Traversal
+  - postOrder Traversal
+  - levelOrder Traversal
+- Delete deepest node
+- get deepest node
+
+
+<br>
+
+<b> Operations implemented using Linked List </b>
+
+1. Create a binary tree : is really simple just create an object of Binary Tree. No need to insert any record.
+
+ <b><i>pseudo code:</i></b>
+  
+      BinaryTree bt = new BinaryTree();
+<br>
+2. delete a binary tree: set the root or head to null
+  
+ <b><i>pseudo code:</i></b>
+  
+      root = null;
+  <br>    
+ 
+ 3.  preOrder traversal :  we will use `Recurssion (recurrsion uses STACK)` for pre order traversal
+ 
+ In pre order the way we traverse the tree is :
+      
+      root
+      left subtree
+      right subtree
+  
+ <b><i>pseudo code:</i></b>
+  
+      void preOrder(root)
+      if(root is null)
+        return
+      else 
+        print root
+        preOrder(root.left)
+        preOrder(root.right)
+      
+ <br>    
+ 4. inOrder traversal : again we will use `Recurssion (recurrsion uses STACK)` for inOrder traversal
+ 
+the way we traverse the tree is :
+      
+      left subtree
+      root
+      right subtree
+  
+<b><i>pseudo code:</i></b>
+  
+      void inOrder(root)
+      if(root is null)
+        return
+      else 
+        preOrder(root.left)
+        print root
+        preOrder(root.right)
+
+<br>
+
+ 5. postOrder traversal : again we will use `Recurssion (recurrsion uses STACK)` for postOrder traversal
+ 
+the way we traverse the tree is :
+      
+      left subtree
+      right subtree
+      root
+      
+  
+ <b><i>pseudo code:</i></b>
+  
+      void postOrder(node)
+      if(node is null)
+        return
+      else 
+        preOrder(root.left)
+        print root
+        preOrder(root.right)
+
+<br>
+ 6. levelOrder traversal : we will use `QUEUE` for levelOrder traversal
+ 
+the way we traverse the tree is :
+      
+      level by level that means we will start from root then look for root children from left to right then go to the left child of root and get the children of it 
+      (left and then right) and so on...
+      
+ For e.g.
+ 
+ let say this is a tree :
+ <br>
+ 
+ ![](images/tree_array.png)
+ 
+ <br>
+ 
+ so the way we will traverse the array is by getting the following output
+ 
+  <br>
+  
+  ![](images/tree_array_data.png)
+  
+  Now to achieve this output we have to use the queue. Let see the psudo code
+  
+ <b><i>pseudo code:</i></b>
+  
+      void levelOrder()
+      if(root is null)
+        return
+     else
+     Create Queue object -> Queue queue = new Queue();
+     enqueue --> queue.add(root);  now let say u added or inserted the tree in a way that it represents like  10|20|30|40|50 so when you add 
+     the same queue it is added as  10 
+     
+     now loop the queue and see if it is no empty
+     
+     create temp node pointing to queue first element  by calling  queue.deque(); -- removed 10 from queue and put it in temp node
+      
+     now queue is empty 
+     add the children of the parent node if there are :
+        
+        - if temp node left != null add it in queue -  it will add 20 in the queue
+        - if temp node right != null add it in queue -  it will add 30 in the queue
+        
+        loop it till the queue is not empty.
+     
+ <br>  
+ 
+ 7. insert :  inserting data in a tree. Here we will use the same logic applied for levelOrder traversal i.e. Queue. We will go level to level and find the first        
+    empty subtree and insert the data in that tree.
     
+ <br>
+    
+ In the below tree all the levels have their left child and right child so we will create a node under 5 as the left child.
+ 
+ <br>
+ 
+ ![](images/tree_array_number)
+ 
+ <br>
+ 
+ <b><i>pseudo code:</i></b>
+      
+        void insert(data)
+        BinaryNode node = new BiaryNode(data)
+        if(root == null) 
+          root = node;
+       else{
+        create Queue 
+        //do the level order and see at what level the queue is empty, loop the queue
+        while(!queue.IsEmpty)
+             dequeue the first value from queue and place it in temp node
+             now check if the left subtree is null 
+                if it null then add the node in the left side
+             else check the right side 
+                if right subtree is null then add the node in the right side
+             else
+                add it in the queue both left and right subtree
+        
+              in the last set size ++;
+ 
+ 
+ <br>
+ 
+ 8.     search : searching  a value from tree. We will again use Queue for the search.
+ 
+    
+            <b><i>pseudo code:</i></b>
+              
+            first we 
+ 
+          
+
