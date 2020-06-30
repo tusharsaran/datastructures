@@ -598,7 +598,7 @@ the way we traverse the tree is :
  
  <br>
  
- ![](images/tree_array_number)
+ ![](images/tree_array_number.png)
  
  <br>
  
@@ -625,12 +625,63 @@ the way we traverse the tree is :
  
  <br>
  
- 8.     search : searching  a value from tree. We will again use Queue for the search.
+ 
+ 8. search : searching  a value from tree. We will again use levelOrder traversal (i.e.Queue) for the search.
  
     
-            <b><i>pseudo code:</i></b>
+ <b><i>pseudo code:</i></b>
               
-            first we 
+            void search(data)
+            if(root == null)  return from the function.
+            else
+            create a Queue and enqueue the root in the queue
+            now loop the queue and check if the queue is not empty.
+            if the queue is not empty 
+                then dequeue the first element from the queue and add it in a temp
+                now check if the temp's node data is equal to the data if yes return
+                else enQueue the temp children (left and right) in the queue if they are not null.
+            if the entitre loop finish without the data print message saying `data is not found in the tree`
+            
  
+ 
+  9. getDeepestNode : finding the deepest node in tree and return the data. Here we will use the levelOrder traversal and Queue. 
+ 
+    
+ <b><i>pseudo code:</i></b>
+              
+            BinaryNode getDeepestNode()
+            if(root == null)  return from the function.
+            else
+            create a Queue and enqueue the root in the queue
+            now loop the queue and check if the queue is not empty.
+            if the queue is not empty 
+                then dequeue the first element from the queue and add it in a temp
+                else  if the temp node has the left node
+                    add left node in the queue
+                else  if the temp node has the right node
+                  add right node in the queue
+          once loop is over return the tempnode
+    
+    
+ 
+  10. deleteDeepestNode : deleting the deepest node in tree and return the data. Here we will use the levelOrder traversal and Queue. 
+ 
+    
+ <b><i>pseudo code:</i></b>
+              
+            BinaryNode deleteDeepestNode()
+            if(root == null)  return from the function.
+            else
+            create a Queue and enqueue the root in the queue
+            now loop the queue and check if the queue is not empty.
+            if the queue is not empty 
+                then dequeue the first element from the queue and add it in a temp
+                else  if the temp node has the left node
+                    add left node in the queue
+                else  if the temp node has the right node
+                  add right node in the queue
+          once loop is over make the tempnode = null;
+               
+            
           
 
