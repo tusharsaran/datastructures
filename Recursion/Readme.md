@@ -1,6 +1,5 @@
 # DS - Section 1: RECURSION
 
-<br>
 <h2>Recursion : Calling Yourself</h2>
   Imagine leaving a building that has a revolving door. Instead of exiting the building, you keep going around and around        
   again, until someone tells you to exit (or you pass out from dizziness). In programming, a recursive method is like this: it   
@@ -8,20 +7,24 @@
 
   You may see possible issues with this right away. The danger is that the method will repeat itself until the program  
   crashes.                                       
-                                         
+
+<br>
 <h2>Properties of Recursion:</h2>
 
     - Same operation is performed multiple times with different input.
     - In every step we try to make the problem smaller.
     - We mandatorily need to have a base condition which tells when to stop the recursion.                                         
-                                         
+
+<br>
 <h2>Why should we learn Recursion:</h2>
   
     - Because it makes the code easy to read & write (compared to iterative) whenever a given problem can be broken down into               
       similar sub-problem.
     - Because it is heavily used in Data structures like Tree and Graph.
     - It is heavily used in techniques like "Divide and Conquer", "Greedy", Dynamic Programming.                                          
-                                                        
+
+
+<br>                                                        
 <h2>Format of a recursive function or method:</h2>
     
     - Recursive case: Case where the function recur
@@ -36,8 +39,10 @@
              SampleRecursion(modified parameter)
           }
         } 
-                                                        
-   <h2>How Recursion works internally :</h2>
+
+
+<br>
+<h2>How Recursion works internally :</h2>
 
     Basically here we will understand how the Recursion method is managed in STACK.
 
@@ -62,13 +67,16 @@
         }
 
 
-<h3>Stack Image of non-recursive method :</h3>
+<br>
+<h2>Stack Image of non-recursive method :</h2>
 <br>
 
 ![](../images/git_stack_image1.png)
 
 <br>     
 <b>So how does it work internaly in this case:</b>
+
+<br>
  
     1. Jvm calls the main() method and notice that the main() method is calling bar() method so it will push the main method 
        in the stack and once the bar method process completes then it will invoke the next line in the main method i.e. 
@@ -81,6 +89,7 @@
        doWork method  i.e.  "System.out.println("inside doWork");".
     4. Next jvm will invoke the doMore method and print "inside doMore" - "System.out.println("inside doMore");".
   
+  <br>
   <h3>output: </h3>
           
           inside doMore
@@ -88,6 +97,7 @@
           inside bar
           inside main
   
+ <br>
  <h2> In case of Recursive method:</h2>
  
     main(){
@@ -102,7 +112,8 @@
           foo(n-1);
           System.out.println("The number is : " + n);
         }
-    
+ 
+ <br>
   <h3>Stack Image for recursive method :</h3>
 
       Pop       Push
@@ -113,14 +124,14 @@
       main()    
       
  
-
+<br>
 <h2> Here is another example that will display the code as well how JVM arrange the recursion method call in stack: <h2>
  
  <br>
  
   ![](../images/git_stack_image2.png)
  
- 
+ <br>
  <h3> How recursive method works internally and things to remember</h3>
   
       1. Jvm calls the main() method first and notice that the main() method is calling showNumber() method 
@@ -138,14 +149,15 @@
          next statement i.e System.out.println("the number is  : " +  num), similary it will do the same for showNumber(2) and     
          showNumber(3) and then call the return statment present in the else loop therefore the "return num" will give the 
          value of 3 and not 0 as when the return statement was invoked the value of num is 3 and not zero.
-         
+
+<br>
 <b><i>`"Point 3(above) is somewhat confusing but is logical and very important to understand about recursive methods"`</i>   </b>
 
 <br>
 <h3> Recursion vs Iteration </h3>
-
 `whatever functionality we can do with Recursion the same can be done by using Iteration`
  
+ <br>
  <b> Difference between Recursion vs Iteration </b>
   <table>
   <tr>
@@ -201,22 +213,23 @@
 
 <p> whenever the problem can be solved by breaking it doen into a similar sub sproblem in those case Recursion is a better approach them Iterations.</p>
 
+<br>
 <h3> When to use Recursion </h3>
 <p> - when the space and time complexity is not a problem. like embedded system we cannot use recursion as space matters.</p>
 <p> - when we can break the problem in a similar sub problem</p>
  <p>- when we need a quick solution without worrying about the efficiency.</p>
 
+<br>
 <h3> When to avoid Recursion </h3>
 <p> - when time and space complexity matters.</p>
 <p> - when we cannot break the problem into a similar sub problem</p>
 <p> - when we dont want the quick solution and need an efficient one</p>
 
+<br>
 <h3> Practical uses of Recursion </h3>
 <p> - Stack</p>
 <p> - Tree - traversal/inserting/deleting</p></p>
 <p> - Sort - Quick sort and merge sort</p>
 <p> - Divide & Conqueor</p>
 <p> - Dynamic Programming</p>
-<p> - </p>
-
   
