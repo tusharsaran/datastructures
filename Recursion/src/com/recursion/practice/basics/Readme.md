@@ -1,5 +1,6 @@
 # Name Reversal
 this method is to reverse the given name as part of the parameter.
+<p> for e.g. the input is "SURUCHI" so the output we are looking is the reversal of the name - "IHCURUS"
 
 <br>
 <h3> Here is the code snippet </h3>
