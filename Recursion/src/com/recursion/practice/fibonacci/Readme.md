@@ -48,19 +48,22 @@ First 2 numbers by definition are 1 and 1
  
  <b>findNumberInFibonacci(4 - 2) + findNumberInFibonacci(4 - 1) ==> findNumberInFibonacci(2) + findNumberInFibonacci(3)</b>
  
+ <br>
  1a. Now it is going to call findNumberInFibonacci(2) with the value 2 so it check if num  < 1 , since it is false then 
  it is going to the else loop to check if num == 1 or num == 2 , since it is 2 it is going to return 2 - 1.
  
  <b>so the value of findNumberInFibonacci(2) = 1</b>
- 
+ <br>
  1b. next it is going to call findNumberInFibonacci(3) with the value 3 so it check if num  < 1 , since it is false then 
  it is going to the else loop to check if num == 1 or num == 2 , since it is neither 1 or 2 so it is going to the next 
  case where its going to return findNumberInFibonacci(3 - 2) + findNumberInFibonacci(3 - 1).
  
  <b>findNumberInFibonacci(3 - 2) + findNumberInFibonacci(3 - 1) ==> findNumberInFibonacci(1) + findNumberInFibonacci(2)</b>
  
+ <br>
  <b>we already got the value of findNumberInFibonacci(2) i.e. = 1</b>. 
  
+ <br>
  Now lets find the value of findNumberInFibonacci(1).
  <b>findNumberInFibonacci(1) is equal to case 1 or 2 so it will return num - 1 i.e. 1 - 1 = 0.</b>
  
