@@ -25,12 +25,14 @@
 
 
 <br>                                                        
-<h2>Format of a recursive function or method:</h2>
-    
+<h2>Format of a recursive function or method:</h2> 
+
     - Recursive case: Case where the function recur
     - Base case: Case where the function does not recur.
 
-    <h3>Example Of Recursion method (Format):<h3>
+
+<br>
+<h2>Example Of Recursion method (Format):</h2>
 
         SampleRecursion(parameter){
           if(base case is satisfied){
@@ -39,7 +41,6 @@
              SampleRecursion(modified parameter)
           }
         } 
-
 
 <br>
 <h2>How Recursion works internally :</h2>
@@ -74,9 +75,8 @@
 ![](../images/git_stack_image1.png)
 
 <br>     
-<b>So how does it work internaly in this case:</b>
-
-<br>
+<h3>So how does it work internaly in this case:</h3>
+ 
  
     1. Jvm calls the main() method and notice that the main() method is calling bar() method so it will push the main method 
        in the stack and once the bar method process completes then it will invoke the next line in the main method i.e. 
@@ -155,10 +155,11 @@
 
 <br>
 <h3> Recursion vs Iteration </h3>
-`whatever functionality we can do with Recursion the same can be done by using Iteration`
+          `whatever functionality we can do with Recursion the same can be done by using Iteration`
  
  <br>
- <b> Difference between Recursion vs Iteration </b>
+ <h3> Difference between Recursion vs Iteration </h3>
+  
   <table>
   <tr>
     <th>
