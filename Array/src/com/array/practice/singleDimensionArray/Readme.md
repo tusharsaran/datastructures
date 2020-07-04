@@ -1,5 +1,5 @@
 <h2> Single Dimensional Array </h2>
-<br>
+
 <h3> Creating single dimensional array </h3>
 
 
@@ -15,12 +15,13 @@
       arry[2] = 0;
       arry[3] = 534;
       arry[4] = 2;
-      
-<b> Other way to create single dimensional array </b>
+
+<br>
+<h3> Other way to create single dimensional array </h3>
  
     int[] arry = {2,445,566,23,353}; 
 
-
+<br>
 <h3>Traversing an array </h3>
 
      int[] arry = {2,445,566,23,353};
