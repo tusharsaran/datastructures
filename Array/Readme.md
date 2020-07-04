@@ -220,8 +220,8 @@ if you have an array then u can find the number in array from the first index.
   </tr>
 </table>
 
-<br><br>
-<h3> Memory management of array </h3>
+<br><br><br>
+<h2> Memory management of array </h2>
   
 Lets say this is the memory before array got created
     <table>
@@ -363,7 +363,8 @@ Lets say this is the memory before array got created
     </table>
 
 
-<br><br>
+<br><br><br>
+
  <h3> b. Two Dimensional Array (is same like single dimensional array :</h3> 
  
    <b>(i)Declaration  </b>
@@ -448,7 +449,7 @@ Lets say this is the memory before array got created
       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
       </tr>
       <tr>
-      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2</td><td>35</td><td>5</td><td>77</td><td>54</td><td>74</td> 
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2</td><td>35</td><td>73</td><td>77</td><td>54</td><td>74</td> 
       </tr>
       <tr>
       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
@@ -500,8 +501,8 @@ Lets say this is the memory before array got created
  ![](../images/git_image_2darray.png)
 
 
-<br><br>
-<h3>When to use Array</h3>
+<br><br><br>
+<h2>When to use Array</h2>
 
 - Where we have to multiple data like 2,4 10 100, 1000 or millions records
 - Data type should be similar like all the values are of type int, char, float , double etc..
@@ -520,8 +521,8 @@ Lets say this is the memory before array got created
   Where as if we have to do it in Linked list we have to go through each cell to reach the particular cell number.
   So the Time complexity in case of accessing cell via linked list is O(n).
   
-  <br><br>
-  <h3>When to avoid Array</h3>
+  <br><br><br>
+  <h2>When to avoid Array</h2>
   
   - Biggest limitation of an array is that data are non- homogenous that means we can not store data with different data type.
   - Before creating the array we have to provide the size of an array in advanced. Array cannot be grow.So cases where we dont   
