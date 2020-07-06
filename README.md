@@ -43,7 +43,7 @@ other Logical DS.
 
 # Topics covered in DS 
   - Section 1: RECURSION --- completed
-  - Section 2 : ARRAY
+  - Section 2 : ARRAY ------ completed
   - Section 3 : LINKED LIST
   - Section 4 : STACK
   - Section 5 : QUEUE --- completed
