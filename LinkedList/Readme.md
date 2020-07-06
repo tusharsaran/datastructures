@@ -1,11 +1,12 @@
 <h2> Linked list :</h2> 
-Is a linear data structure where each element is a separate object. Each element(also known as node) of a list comprises of 
+Is a linear data structure where each element is a separate object. Each element(also known as `NODE`) of a list comprises of 
 two items:
 
 - Data
 - And the address of the next node.
+
 <br>
-<b>*****Powerful feature of linked lists is that it is variable in size.</b>
+<b><u>NOTE :</u> Powerful feature of linked lists is that it is variable in size.</b>
 
 <br>
 <h3>Lets understand linked list using a Train example:</h3>
