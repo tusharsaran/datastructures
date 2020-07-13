@@ -1,3 +1,4 @@
+# DS - Section 2: Array
 <h2>Array:</h2>
 is a datastructure consisting of the collection of simiar data type elements each identified by array index. An array is stored
 such that the position of each element can be computed from its indec cell by a mathematical formulae. What that means is that
