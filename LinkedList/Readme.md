@@ -12,7 +12,7 @@ two items:
 <h3>Lets understand linked list using a Train example:</h3>
 <br>
 
-![](images/ll_train)
+![](images/ll_train.png)
 
 
 <br><br>
@@ -36,10 +36,8 @@ Linked list is a variable in size that means u can insert or remove an element o
 
 <b>E.g. of Linked list</>
 
-![](https://lh5.googleusercontent.com/mv5F1IEmcR6YIOXvcHNH78CU6xldGHVRj5jR0fqmtJFJ9VnYgIO3UsmzqFQixYCzkilfELO5oocw04_g2QYhaS0Gv7p_Jik4f5gTP5Q)
-
-<br> <br>
-![](https://lh5.googleusercontent.com/xBHn6pTg-_DpDVZaxAtXO-0eVoT5e4Uh8defGvqfLSEuAmidWe8NpitionN-LjI1VCOjTmaJipeTQjpF12rl2292rUspyk9wtNo_-SET)
+<br>
+![](ll_example.png)
 
 <br><br>
 
@@ -48,11 +46,7 @@ Linked list is a variable in size that means u can insert or remove an element o
 
 <b>Linked list vs Array:</b>
 
-![](https://lh6.googleusercontent.com/V6p1VESavYhrGVhdzx0T0AZ4OLvdTeVRcdTMbDXowiZYZEGRanz8ClTnPBwFr7ujXrvCLDj3h-S59qpZZHAgoR3HELBG8-oF5M-4NiOK)
-
-	VS
-
-![](https://lh3.googleusercontent.com/uJNs1U0o0En9rBbG4JdEEp9cH7qM7ge7Yjnkq2mhQq0_D20uotVi7EIjwfQUh438olwiahtypwAkpj_EJe4_27ofQt9tHLkvZ-rVw6k)
+![](ll_vs_array.png)
 
 
 <br>
@@ -66,6 +60,10 @@ Node: contains the data and reference to the next node.
 Head: is the first component or node in the list. Here in head we store the value 001 indicating that the first node is residing in this address in memory. 
 The reason we need head is coz with the help of head  we know where the linked list is store and we can access the linked list.
 
+<br>
+![](ll_head.png)
+<br>
+
 Tail : reference to the last node in the linked list. In this case we see 555 is the last address and therefore tail store the value 555. 
 Now the reason we need tail is because if we don’t have the tail and we have to add an element in the address then to get the address value i.e. 555 we have to go from the beginning till the second last node to get the address value i.e. 555 and then we can add the last node.
 But using tail we can get the value from there.
@@ -77,19 +75,29 @@ Following are the types of linked list:
 
 - Single Linked List:is the linked list which consists of data and the address to the next node. It does not contain the address of the previous node. Also the last cell consists of the  data and address as NULL.
 
+<br>
+![](ll_sll.png)
+<br><br>
 		
 
 - Circular Single Linked List : is the linked list similar to single linked list which consists of data and the address to the next node. It does not contain the address of the previous node. The only difference is the last cell consists of the  data and address of the first cell.
 
-
+<br>
+![](ll_circular_sll.png)
+<br><br>
 
 - Double linked List : is the linked list which consists of data and the address to the previous and next node. Also the last cell consists of the  data and address as NULL.
 
+<br>
+![](ll_dll.png)
+<br><br>
 
 - Circular Double linked List : is the linked list which is similar to double linked and consists of data and the address to the previous and next node. Also the last cell consists of the  data and address of the first cell.
 
+<br>
+![](ll_circular_dll.png)
+<br><br>
 
-<br> <br>
 
 
 <h3> Why do we need so many Linked List:</h3>
@@ -116,10 +124,16 @@ Following are the types of linked list:
 	Lets see again how array is stored in memory:
 	Let's say we have an array and the size is 10 so it will store in the memory and take 10 consecutive  cells and the compiler takes the address of the first 	    cell and stores it in the reference variable. Let's say the address value of first cell is 0001 so compiler knows the address of the next 10 cells as they 	       are consecutive and there in Array we can directly go to any address and that's one of the biggest advantage of Array. 
 
-
+<br>
+![](array_memory.png)
+<br><br>
 
 
 	Now let’s see how linked is stored in memory:
 	As you see Linked list does not store the value in continuous and that’s the reason why liked linked cannot go to a cell directly and have to traverse in 	  sequence. 
 
 	But the advantage of storing the linked list like this is that we can insert or remove the cells at any point and that is one of the biggest advantages of 	   linked list that we dont have to provide the size of the linked list before creation.
+	
+<br>
+![](ll_memory.png)
+<br><br>
