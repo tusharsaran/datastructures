@@ -56,11 +56,13 @@ Linked list is a variable in size that means u can insert or remove an element o
 Variable size : in  Linked list the number of nodes are not defined we can insert and delete the nodes in linked list but in array we have to provide the size of the array before creating an array.
 Random access : In linked list we cannot access the node randomly or directly if we have to access any node in between then we have to start from the beginning and have to traverse to the node. In array we can access the element easily or directly. This is one of the biggest limitation in Linked List.
 
+<br> <br>
 
-Component Of Linked List:
-Node: contains the data and reference to the next node.
-Head: is the first component or node in the list. Here in head we store the value 001 indicating that the first node is residing in this address in memory. 
-The reason we need head is coz with the help of head  we know where the linked list is store and we can access the linked list.
+<h3> Component Of Linked List:</h3>
+
+- Node: contains the data and reference to the next node.
+- Head: is the first component or node in the list. Here in head we store the value 001 indicating that the first node is residing in this address in memory. 
+  The reason we need head is coz with the help of head  we know where the linked list is store and we can access the linked list.
 
 <br>
 
@@ -68,7 +70,7 @@ The reason we need head is coz with the help of head  we know where the linked l
 
 <br>
 
-Tail : reference to the last node in the linked list. In this case we see 555 is the last address and therefore tail store the value 555. 
+- Tail : reference to the last node in the linked list. In this case we see 555 is the last address and therefore tail store the value 555. 
 Now the reason we need tail is because if we don’t have the tail and we have to add an element in the address then to get the address value i.e. 555 we have to go from the beginning till the second last node to get the address value i.e. 555 and then we can add the last node.
 But using tail we can get the value from there.
 
@@ -128,7 +130,7 @@ Following are the types of linked list:
 
 
 
-
+<br><bR>
 
 
 <h3>How Linked List is store in memory:</h3>
