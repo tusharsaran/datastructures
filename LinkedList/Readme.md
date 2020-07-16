@@ -37,6 +37,7 @@ Linked list is a variable in size that means u can insert or remove an element o
 <b>E.g. of Linked list</>
 
 <br>
+
 ![](images/ll_example.png)
 
 <br><br>
@@ -61,7 +62,9 @@ Head: is the first component or node in the list. Here in head we store the valu
 The reason we need head is coz with the help of head  we know where the linked list is store and we can access the linked list.
 
 <br>
+
 ![](images/ll_head.png)
+
 <br>
 
 Tail : reference to the last node in the linked list. In this case we see 555 is the last address and therefore tail store the value 555. 
@@ -76,26 +79,34 @@ Following are the types of linked list:
 - Single Linked List:is the linked list which consists of data and the address to the next node. It does not contain the address of the previous node. Also the last cell consists of the  data and address as NULL.
 
 <br>
+
 ![](images/ll_sll.png)
+
 <br><br>
 		
 
 - Circular Single Linked List : is the linked list similar to single linked list which consists of data and the address to the next node. It does not contain the address of the previous node. The only difference is the last cell consists of the  data and address of the first cell.
 
 <br>
+
 ![](images/ll_circular_sll.png)
+
 <br><br>
 
 - Double linked List : is the linked list which consists of data and the address to the previous and next node. Also the last cell consists of the  data and address as NULL.
 
 <br>
+
 ![](images/ll_dll.png)
+
 <br><br>
 
 - Circular Double linked List : is the linked list which is similar to double linked and consists of data and the address to the previous and next node. Also the last cell consists of the  data and address of the first cell.
 
 <br>
+
 ![](images/ll_circular_dll.png)
+
 <br><br>
 
 
@@ -125,7 +136,9 @@ Following are the types of linked list:
 	Let's say we have an array and the size is 10 so it will store in the memory and take 10 consecutive  cells and the compiler takes the address of the first 	    cell and stores it in the reference variable. Let's say the address value of first cell is 0001 so compiler knows the address of the next 10 cells as they 	       are consecutive and there in Array we can directly go to any address and that's one of the biggest advantage of Array. 
 
 <br>
+
 ![](images/array_memory.png)
+
 <br><br>
 
 
@@ -135,5 +148,7 @@ Following are the types of linked list:
 	But the advantage of storing the linked list like this is that we can insert or remove the cells at any point and that is one of the biggest advantages of 	   linked list that we dont have to provide the size of the linked list before creation.
 	
 <br>
+
 ![](images/ll_memory.png)
+
 <br><br>
