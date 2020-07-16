@@ -34,7 +34,7 @@ two items:
 Each linked list has data (passengers in the compartment) and  reference is nothing but the couplers. 
 Linked list is a variable in size that means u can insert or remove an element or node anytime from the linked list.</p>
 
-<b>E.g. of Linked list</>
+<b>E.g. of Linked list</b>
 
 <br>
 
@@ -51,6 +51,7 @@ Linked list is a variable in size that means u can insert or remove an element o
 
 
 <br>
+
 <b>Separate Object: </b>In Linked list each element or node is a separate or independent object but in case of Array the elements are not independent in fact the entire array is one object. What it means is let's say we have to insert or delete any elements or nodes from linked list then we can do that but the same is not possible in the case of Array.We cannot delete the cell in Array we can update the value in array
 Variable size : in  Linked list the number of nodes are not defined we can insert and delete the nodes in linked list but in array we have to provide the size of the array before creating an array.
 Random access : In linked list we cannot access the node randomly or directly if we have to access any node in between then we have to start from the beginning and have to traverse to the node. In array we can access the element easily or directly. This is one of the biggest limitation in Linked List.
