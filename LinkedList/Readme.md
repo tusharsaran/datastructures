@@ -10,11 +10,12 @@ two items:
 
 <br><br>
 <h3>Lets understand linked list using a Train example:</h3>
+<br>
 
-![](https://lh4.googleusercontent.com/yn-yLknwXYbCj90786oyZKP6D89T5UQj93oLIjW8mtRHpvRX9CxHc61i7kdghyv7qbpI1nfXWVGWskcgbRnzFaR9AC2gB3TadUELo-CR)
+![](images/ll_train)
 
 
-
+<br><br>
 <b> Now there are couple of things we have to notice here in the train: </b>
 
 - In this train we have one engine, 4 compartments and 1 guard room.
@@ -54,6 +55,7 @@ Linked list is a variable in size that means u can insert or remove an element o
 ![](https://lh3.googleusercontent.com/uJNs1U0o0En9rBbG4JdEEp9cH7qM7ge7Yjnkq2mhQq0_D20uotVi7EIjwfQUh438olwiahtypwAkpj_EJe4_27ofQt9tHLkvZ-rVw6k)
 
 
+<br>
 <b>Separate Object: </b>In Linked list each element or node is a separate or independent object but in case of Array the elements are not independent in fact the entire array is one object. What it means is let's say we have to insert or delete any elements or nodes from linked list then we can do that but the same is not possible in the case of Array.We cannot delete the cell in Array we can update the value in array
 Variable size : in  Linked list the number of nodes are not defined we can insert and delete the nodes in linked list but in array we have to provide the size of the array before creating an array.
 Random access : In linked list we cannot access the node randomly or directly if we have to access any node in between then we have to start from the beginning and have to traverse to the node. In array we can access the element easily or directly. This is one of the biggest limitation in Linked List.
@@ -69,8 +71,8 @@ Now the reason we need tail is because if we don’t have the tail and we have t
 But using tail we can get the value from there.
 
 
-Types Of Linked List:
-		
+<br>
+<h3> Types Of Linked List:</h3>
 Following are the types of linked list:
 
 - Single Linked List:is the linked list which consists of data and the address to the next node. It does not contain the address of the previous node. Also the last cell consists of the  data and address as NULL.
