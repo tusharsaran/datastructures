@@ -43,7 +43,7 @@ Linked list is a variable in size that means u can insert or remove an element o
 
 
 
-<b>Linked list vs Array:</b>
+<h3>Linked list vs Array:</h3>
 
 ![](images/ll_vs_array.png)
 
@@ -77,7 +77,7 @@ But using tail we can get the value from there.
 <h3> Types Of Linked List:</h3>
 Following are the types of linked list:
 
-- Single Linked List:is the linked list which consists of data and the address to the next node. It does not contain the address of the previous node. Also the last cell consists of the  data and address as NULL.
+- <b>Single Linked List :</b>is the linked list which consists of data and the address to the next node. It does not contain the address of the previous node. Also the last cell consists of the  data and address as NULL.
 
 <br>
 
@@ -86,7 +86,7 @@ Following are the types of linked list:
 <br><br>
 		
 
-- Circular Single Linked List : is the linked list similar to single linked list which consists of data and the address to the next node. It does not contain the address of the previous node. The only difference is the last cell consists of the  data and address of the first cell.
+- <b>Circular Single Linked List :</b> is the linked list similar to single linked list which consists of data and the address to the next node. It does not contain the address of the previous node. The only difference is the last cell consists of the data and address of the first cell.
 
 <br>
 
@@ -94,7 +94,7 @@ Following are the types of linked list:
 
 <br><br>
 
-- Double linked List : is the linked list which consists of data and the address to the previous and next node. Also the last cell consists of the  data and address as NULL.
+- <b>Double linked List :</b> is the linked list which consists of data and the address to the previous and next node. Also the last cell consists of the  data and address as NULL.
 
 <br>
 
@@ -102,7 +102,7 @@ Following are the types of linked list:
 
 <br><br>
 
-- Circular Double linked List : is the linked list which is similar to double linked and consists of data and the address to the previous and next node. Also the last cell consists of the  data and address of the first cell.
+- <b>Circular Double linked List :</b> is the linked list which is similar to double linked and consists of data and the address to the previous and next node. Also the last cell consists of the  data and address of the first cell.
 
 <br>
 
