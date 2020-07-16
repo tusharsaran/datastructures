@@ -4,9 +4,7 @@ two items:
 
 - Data
 - And the address of the next node.
-
-<br><br>
-<b><u>NOTE :</u> Powerful feature of linked lists is that it is variable in size.</b>
+<p><b><u>NOTE :</u> Powerful feature of linked lists is that it is variable in size.</b></p>
 
 <br><br>
 <h3>Lets understand linked list using a Train example:</h3>
