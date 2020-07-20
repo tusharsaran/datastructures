@@ -34,8 +34,8 @@ Some more examples of tree:
 
 <b>Tree: </b>  
 
-- In computer science, a tree is a widely used abstract data type that simulates a hierarchical tree structure, with a root value and subtrees of children with a   
-  parent node, represented as a set of linked nodes.
+- In computer science, a tree is a widely used abstract data type that simulates a hierarchical tree structure, with a root value 
+  and subtrees of children with a   parent node, represented as a set of linked nodes.
 - A tree is a nonlinear data structure, compared to arrays, linked lists, stacks and queues which are linear data structures. 
 - A tree can be empty with no nodes or a tree is a structure consisting of one root and zero or one or more subtrees.
 
