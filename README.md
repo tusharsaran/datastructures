@@ -45,7 +45,7 @@ other Logical DS.
   - Section 1: RECURSION --- completed
   - Section 2 : ARRAY ------ completed
   - Section 3 : LINKED LIST
-  - Section 4 : STACK
+  - Section 4 : STACK ------ completed
   - Section 5 : QUEUE --- completed
   - Section 6 : TREE
 
