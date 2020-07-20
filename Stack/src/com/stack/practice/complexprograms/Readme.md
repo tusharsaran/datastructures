@@ -49,10 +49,10 @@
      2 * 5 / 2 + 3 * (2+3) = ?
      
      So here we will first apply Operator Precedence 
-        - so first come Parenthesis (2+3) =>    2 * 5 / 2  3 * 5
+        - so first come Parenthesis (2+3) =>    2 * 5 / 2 + 3 * 5
         - next come Mulitplication and Division, now we have both operators 2 * 5 / 4 so we will used Operator Associativity 
         which is Left to right so:
-        =>  2 * 5 / 4 + 3 * 5 = > 10 / 2 + 3 * 5  = > 5 + 3 * 5 => 5 + 15 = > 20;
+        =>  2 * 5 / 2 + 3 * 5 = > 10 / 2 + 3 * 5  = > 5 + 3 * 5 => 5 + 15 = > 20;
     
     Infix expression can cause lot of ambiguity therefore there are 2 more way of expressions which will nremove the ambiguity
     and also we dont have to worry about Operator Precedence and Operator Associativity.
