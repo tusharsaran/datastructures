@@ -59,6 +59,9 @@ Insertion and deletion is possible from one end.
 
     Disadvantage:
     - Has a fixed size.
+    
+<b>Note: Please check the readMe section of Stack(via Array) </b> 
+[Stack Implementation using Array!](https://github.com/tusharsaran/datastructures/tree/master/Stack/src/com/stack/practice/array)    
 
 
 <br> <br>
@@ -70,6 +73,8 @@ Insertion and deletion is possible from one end.
     Disadvantage:
     - Moderate in implementation.
 
+<b>Note: Please check the readMe section of Stack(via Linked List) </b> 
+[Stack Implementation using Linked List!](https://github.com/tusharsaran/datastructures/tree/master/Stack/src/com/stack/practice/likedlist)   
 
 <br> <br>
 <h3>Time and space Complexity of Stack :</h3>
