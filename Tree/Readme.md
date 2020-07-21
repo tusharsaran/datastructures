@@ -377,7 +377,7 @@ if we take the below tree then the formulae will be:
   
   <br>
   
-  ![](images/tree_vs_linkedlist_height.png)
+  ![](images/tree_linkedlist_height.png)
     
   <br>
   
