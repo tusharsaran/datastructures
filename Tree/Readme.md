@@ -372,7 +372,7 @@ if we take the below tree then the formulae will be:
     5. Calculating the height of a perfect/full binary tree with n nodes
         height =  Math.floor(log2 n)
   
-  <br><b>
+  <br><br>
   Check the following image on the left side is tree and right side it is linked list 
   
   <br>
