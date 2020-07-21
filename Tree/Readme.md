@@ -354,6 +354,57 @@ if we take the below tree then the formulae will be:
 <b>Balanced Binary tree</b>
 <p> is a tree where the difference between the height of left and right subtree for every node should ot be more than 1.
   
+
+
+<h3> some important formulaes</h3>
+
+    1. max number of edges in a Full binary tree  =  (total number of nodes) - 1
+    
+    2. calculate max nodes at a x level in a binary tree:
+       node = 2h+1 - 1
+    
+    3. calculate level of tree based on total number of nodes in a binary tree
+       level = Math.floor(log2 n)  =>   Floor(log2(15)) =  3
+       
+    4. Calculating the height of a complete binary tree with n nodes
+       height =  Math.floor(log2 n)
+       
+    5. Calculating the height of a perfect/full binary tree with n nodes
+        height =  Math.floor(log2 n)
+  
+  <br><b>
+  Check the following image on the left side is tree and right side it is linked list 
+  
+  <br>
+  
+  ![](images/tree_vs_linkedlist_height.png)
+    
+  <br>
+  
+  
+  <p>Now if you notice if we calculate the max height the tree it will be:</p>
+        <p>height  =  (log2 n)</p>
+  
+  <p>and if we calculate the max height of Linked list it will be </p>
+      <p> height =  O(n)</p>
+      
+<br>
+so if we see height is propotional to time complexity so:
+
+Time complexity of tree  =  O(log2 n) - which is way better than O(n)
+<p>where as Time complexity of linked list  =  O(n)</p>
+  
+  
+
+<br><br> 
+<b>Lets talk about very important topic before we start implementing Tree i.e. Height</b>
+
+- We already discussed height  of a trees = total number of edges from the longest path from root to the leaf , remember 
+  its the total number of edges and not the nodes between root and leaf.
+- height of a tree with one node or leaf node  =  0
+-  height of empty tree  = -1
+
+
   
 <br><br>  
 <h3>Tree Representation </h3>
