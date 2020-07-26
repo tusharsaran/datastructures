@@ -283,10 +283,11 @@ Lets say this is the memory before array got created
       
       int [] arry =  new int[4];
       
-      Once an array is created the compiler do allocate the total size of an array in memory at any place and it is conitnues,
-      since the array size is 4, compiler will allocate 4 memory cells to the array and will by default place 0 as the value.
-      Also it will get the memory address of the first cell of an array and allocate it to the reference variable i.e. arry.
-      Lets say the memory address of the first cell is 111 so it will store the address to the reference variable i.e. `arry`.
+      Once an array is created the compiler do allocate the total size of an array in memory at any place and 
+      it is conitnues,since the array size is 4, compiler will allocate 4 memory cells to the array and will by 
+      default place 0 as the value.Also it will get the memory address of the first cell of an array and allocate
+      it to the reference variable i.e. arry.Lets say the memory address of the first cell is 111 so it will store 
+      the address to the reference variable i.e. `arry`.
       
  
  
@@ -404,9 +405,11 @@ Lets say this is the memory before array got created
       
       int [][] arry =  new int[2][3];
       
-      Once an array is created the compiler do allocate the total size of an array in memory at any place and it is conitnues,
-      since the array size is 4, compiler will allocate 4 memory cells to the array and will by default place 0 as the value.
-      Also it will get the memory address of the first cell of an array and allocate it to the reference variable i.e. arry.
+      Once an array is created the compiler do allocate the total size of an array in memory at any place and it 
+      conitnues,since the array size is 4, compiler will allocate 4 memory cells to the array and will by default 
+      place 0 as the value.Also it will get the memory address of the first cell of an array and allocate it to 
+      the reference variable i.e. arry.
+      
       Lets say the memory address of the first cell is 111 so it will store the address to the reference variable i.e. `arry`.
       
  
