@@ -159,14 +159,14 @@ It is implemeneted using the Physical data strture (like Stack) i.e.
               
               now we will enque one record i.e. 45
               
-                -> so it will go to first condition if queue is full it is not here queue is not full so it will skip this 
-                   condition also 
+                -> so it will go to first condition if queue is full it is not here queue is not full so it will skip 
+                   this condition also 
                 -> then it will check it it is empty queue here queue is not empty so it will skip this condition also
                 -> it will insert a record in queue based on the following formulae:
                     - `queue[(endQueue + 1) % N]  = data`
                     => queue[(4 + 1) % 5]  = 45
-                    => lets calculate the inner formulae i.e (endQueue + 1) % N , here endqueue is pointing to cell 4 and 
-                       N =  total size of array
+                    => lets calculate the inner formulae i.e (endQueue + 1) % N , here endqueue is pointing to cell 4 
+                       and N =  total size of array
                     => (endQueue + 1) % N =>  (4 + 1) % 5
                     =>  (4 + 1) % 5 =>  5 % 5 = 0
                     => queue[0] = 45
@@ -190,17 +190,18 @@ It is implemeneted using the Physical data strture (like Stack) i.e.
                 - if beginingQueue ==  endQueue here beginingQueue is pointing to cell 2 and endqueue is pointing 
                   to cell 4 so it will skip this condition
                 - if beginingQueue !=  endQueue this condition is true as beginingQueue is pointing to cell 2 and 
-                  endqueue is pointing to cell 4 and they are not equal so it will deque the element based on the formulae:
+                  endqueue is pointing to cell 4 and they are not equal so it will deque the element based on the 
+                  formulae:
                 
                 beginingQueue =  (beginingQueue + 1) % N
                 => beginingQueue = (2 + 1) % 5
                                  = 3 % 5 
                                  = 3 (3 % 5 = 3 and not 0 or 0.6 why lets see 
-                                     if the operation is 12 % 5 then 5 * 2 = 10 which is smaller than 12 and 5 * 3 = 15 so 
-                                     we will take 5 * 2 = 10
+                                     if the operation is 12 % 5 then 5 * 2 = 10 which is smaller than 12 
+                                     and 5 * 3 = 15 so we will take 5 * 2 = 10
                                      so 12  - 10 = 2 
-                                     similarly for any first digit smaller than the second digit it will multiply by 0 so 
-                                     in this case it will be
+                                     similarly for any first digit smaller than the second digit it will multiply 
+                                     by 0 so in this case it will be
                                      
                                      => 3 % 5
                                      => 3 - (5 * 0)
@@ -222,30 +223,31 @@ It is implemeneted using the Physical data strture (like Stack) i.e.
         
         1. Now there is a disadvntage and that is if we want to enque element in a queue then :
             a. either we will say queue is full coz array size cannot be increased or
-            b. create another array with extra size and then copy the entire array and place in this new array(with extra
-               size). But the problem with that is that copy and adding the records in new array is expensive as the Time 
-               complexity it will take is O(n). Thats why  Linked list has an advantage over it.
+            
+            b. create another array with extra size and then copy the entire array and place in this new array
+            (with extra size). But the problem with that is that copy and adding the records in new array is 
+            expensive as the Time complexity it will take is O(n). Thats why  Linked list has an advantage over it.
             
         2.Now lets take another example :
           [23][][][][][][][][][][][][]  - array with only one element.
           
-          Now the problem with such kind of array is that it is unnecessary taking extra space or memory and thats why
-          Linked list has an advantage over it.
+          Now the problem with such kind of array is that it is unnecessary taking extra space or memory and thats 
+          why Linked list has an advantage over it.
             
         
       3. Lets take another array  [23][5][1][4][3][]
        
-       now the advantage of array over linked list is in case i want to search for any cell I dont have to traverse from
-       the start like in the case of linked list we can easily search/pick the array as we know the stating point/address
-       and the last address of the array. 
+       now the advantage of array over linked list is in case i want to search for any cell I dont have to traverse 
+       from the start like in the case of linked list we can easily search/pick the array as we know the stating 
+       point/address and the last address of the array. 
        
        This is not easy in Linked List and to get any element other than first element one has to :
        
-       a. either traverse from one element to another element till we get the desired element. Now the problem with such
-       kind of traversing is that it is costly as the time complexity for traversing is O(n).
+       a. either traverse from one element to another element till we get the desired element. Now the problem with
+       such kind of traversing is that it is costly as the time complexity for traversing is O(n).
        
-       b. there is other way also where you define the logic in such a manner that the search will be order of constant
-       (O(1)) instead of O(n).
+       b. there is other way also where you define the logic in such a manner that the search will be order of 
+       constant (O(1)) instead of O(n).
         
  
  <br> <br>
