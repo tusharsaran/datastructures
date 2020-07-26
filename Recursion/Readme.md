@@ -79,15 +79,18 @@
 <h3>So how does it work internaly in this case:</h3>
  
  
-    1. Jvm calls the main() method and notice that the main() method is calling bar() method so it will push the main method 
-       in the stack and once the bar method process completes then it will invoke the next line in the main method i.e. 
-       "System.out.println("inside main");" and so on..
+    1. Jvm calls the main() method and notice that the main() method is calling bar() method so it will push the main 
+       method in the stack and once the bar method process completes then it will invoke the next line in the main 
+       method i.e. "System.out.println("inside main");" and so on.
+       
     2. then jvm will invoke the bar method and notice that it is calling the doWork() method so it will push the bar() 
-       method in the stack and once the doWork method process completes then it will invoke the next line in the bar method    
-       i.e.  "System.out.println("inside bar");".
-    3. Similarly jvm will invoke the doWork method and notice that it is calling the doMore() method so it will push the    
-       doWork() method in the stack and once the doMore method process completes then it will invoke the next line in the 
-       doWork method  i.e.  "System.out.println("inside doWork");".
+       method in the stack and once the doWork method process completes then it will invoke the next line in the bar 
+       method i.e.  "System.out.println("inside bar");"
+       
+    3. Similarly jvm will invoke the doWork method and notice that it is calling the doMore() method so it will push 
+       the doWork() method in the stack and once the doMore method process completes then it will invoke the next 
+       line in the doWork method  i.e.  "System.out.println("inside doWork");".
+       
     4. Next jvm will invoke the doMore method and print "inside doMore" - "System.out.println("inside doMore");".
   
   <br>
@@ -137,19 +140,24 @@
   
       1. Jvm calls the main() method first and notice that the main() method is calling showNumber() method 
          so it will push the main method in the stack.
-      2. then jvm will invoke the showNumber(3) and noticed that it has a base condition that if the number is less than 1 
-         i.e. 0 then return the value of num variable else call the recusive condition by calling the  showNumber(n-1) i.e.  
-         method showNumber(2) recursively so it will push the showNumber(3) in stack and complete the rest of the statement 
-         once it will invoke showNumber(2) completely.
-      3. Now jvm invoke the showNumber(2) and similary showNumber(1) till the time the value is not less that 1 i.e. 0, once     
-         the value = 0 it will not execute the return statement coz if it did then it will come out of the method and it will 
-         not be able to execute the statement of rest of the showNumber() methods like showNumber(3), showNumber(2) and 
-         showNumber(1).
-         So what it will first call the statement that is present in the if condition when num == 0 and if it finds the return 
-         statement then instead of calling the return statement it will go to the showNumber(1) in else statemnt and call the 
-         next statement i.e System.out.println("the number is  : " +  num), similary it will do the same for showNumber(2) and     
-         showNumber(3) and then call the return statment present in the else loop therefore the "return num" will give the 
-         value of 3 and not 0 as when the return statement was invoked the value of num is 3 and not zero.
+      
+      2. then jvm will invoke the showNumber(3) and noticed that it has a base condition that if the number is 
+         less than 1 i.e. 0 then return the value of num variable else call the recusive condition by calling 
+         the  showNumber(n-1) i.e.  method showNumber(2) recursively so it will push the showNumber(3) in stack 
+         and complete the rest of the statement once it will invoke showNumber(2) completely.
+      
+      3. Now jvm invoke the showNumber(2) and similary showNumber(1) till the time the value is not less that 1 
+         i.e. 0, once     the value = 0 it will not execute the return statement coz if it did then it will come 
+         out of the method and it will not be able to execute the statement of rest of the showNumber() methods 
+         like showNumber(3), showNumber(2) and showNumber(1).
+         
+         So what it will first call the statement that is present in the if condition when num == 0 and if it finds 
+         the return statement then instead of calling the return statement it will go to the showNumber(1) in else 
+         statemnt and call the next statement i.e System.out.println("the number is  : " +  num), similary it will 
+         do the same for showNumber(2) and showNumber(3) and then call the return statment present in the else loop 
+         therefore the "return num" will give the value of 3 and not 0 as when the return statement was invoked the 
+         value of num is 3 and not zero.
+
 
 <br>
 <b><i>`"Point 3(above) is somewhat confusing but is logical and very important to understand about recursive methods"`</i>   </b>
