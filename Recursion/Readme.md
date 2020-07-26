@@ -13,15 +13,16 @@
 
     - Same operation is performed multiple times with different input.
     - In every step we try to make the problem smaller.
-    - We mandatorily need to have a base condition which tells when to stop the recursion.                                         
-
+    - We mandatorily need to have a base condition which tells when to stop the recursion.
+    
+    
 <br>
 <h2>Why should we learn Recursion:</h2>
   
-    - Because it makes the code easy to read & write (compared to iterative) whenever a given problem can be broken down into               
-      similar sub-problem.
+    - Because it makes the code easy to read & write (compared to iterative) whenever a given problem can be 
+      broken down into similar sub-problem.
     - Because it is heavily used in Data structures like Tree and Graph.
-    - It is heavily used in techniques like "Divide and Conquer", "Greedy", Dynamic Programming.                                          
+    - It is heavily used in techniques like "Divide and Conquer", "Greedy", Dynamic Programming.
 
 
 <br>                                                        
