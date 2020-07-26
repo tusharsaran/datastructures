@@ -20,8 +20,7 @@
     i. reversing a string or word
     Ii. undo
     Iii. checking the braces closing { { { }}}
-    Iv.
-    V.
+    Iv. recursion
 
 
 <br> <br>
