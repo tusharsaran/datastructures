@@ -222,7 +222,7 @@ if you have an array then u can find the number in array from the first index.
 </table>
 
 <br><br><br>
-<h2> Memory management of array </h2>
+<h2>Memory management of array </h2>
   
 Lets say this is the memory before array got created
     <table>
