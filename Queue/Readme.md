@@ -99,10 +99,10 @@ It is implemeneted using the Physical data strture (like Stack) i.e.
  <b>If we again call isFull it will return true which logically is not correct coz we have two empty cells</b></p>
  
  <br>
- Now to fix this kind of issue we have a concept of <br>Circular Queue.</br>
+ Now to fix this kind of issue we have a concept of </b>Circular Queue.</b>
  
  <br>
- Ciricular queue has some diffenent concepts for fewof it operations.
+ Ciricular queue has some diffenent concepts for few of it operations.
 
      1.createQueue() - same like Queue nothing change
      2.isEmpty - same like queue nothing change
@@ -111,11 +111,12 @@ It is implemeneted using the Physical data strture (like Stack) i.e.
      5.isFull - here the cncept is change let see :
               
               Algo:
-              - check if `(endQueue + 1) % N == beginingQueue` return true else false ----> Here N represents the size of an array      
+              - check if `(endQueue + 1) % N == beginingQueue` return true else false ----> Here N represents the 
+                size of an array      
          
               lets see : 
-              here we way array of 5 that has only 3 element and the `endQueue is pointing to 5th element i.e. [9]` and `beginingQueue pointing to 2nd        
-              element i.e.[1]`
+              here we way array of 5 that has only 3 element and the `endQueue is pointing to 5th element i.e. [9]` 
+              and `beginingQueue pointing to 2nd element i.e.[1]`
           
               [][][1][4][9] 
 
@@ -124,15 +125,15 @@ It is implemeneted using the Physical data strture (like Stack) i.e.
                 => 5 % 5 == 2
                 => 0 == 2  =>  Queue is not Full 
                 
-                Again lets see with another example this time we have added one element in array, this time the beginingQueue is pointing to the 1st cell
-                [][2][1][4][9] 
+                Again lets see with another example this time we have added one element in array, this time the 
+                beginingQueue is pointing to the 1st cell [][2][1][4][9] 
                 
                 => (4 + 1) % 5 == 1
                 => 5 % 5 == 1
                 => 0 == 1  =>  Queue is not Full 
                 
-               One last example: this time we have all the elements in array full with data, this time the beginingQueue is pointing to the 0th cell
-               [6][2][1][4][9]
+               One last example: this time we have all the elements in array full with data, this time the beginingQueue 
+               is pointing to the 0th cell [6][2][1][4][9]
                
                 => (4 + 1) % 5 == 0
                 => 5 % 5 == 0
@@ -141,7 +142,8 @@ It is implemeneted using the Physical data strture (like Stack) i.e.
      6.enQueue (insert) -  here the concept is also slightly change, lets see:
      
                 Algo:
-                - if the queue is Full that means `(endQueue + 1) % N == beginingQueue`  exit from method  ----> this is same
+                - if the queue is Full that means `(endQueue + 1) % N == beginingQueue`  exit from method  ----> this is 
+                  same
                 - if the queue is empty than  beginingQueue and endQueue both are -1  ----> this is same
                     -  point `beginingQueue == endQueue + 1` (i.e. 0)
                     -  point `endqueue ==  endQueue + 1` (i.e. 0)
@@ -150,19 +152,21 @@ It is implemeneted using the Physical data strture (like Stack) i.e.
                         -  point `endqueue == [endQueue + 1] % N` 
      
               lets see with the same example: 
-              here we way array of 5 that has only 3 element and the `endQueue is pointing to 5th element i.e. [9]` and `beginingQueue pointing to 2nd        
-              element i.e.[1]`
+              here we way array of 5 that has only 3 element and the `endQueue is pointing to 5th element i.e. [9]` and 
+              `beginingQueue pointing to 2nd element i.e.[1]`
           
               [][][1][4][9]
               
               now we will enque one record i.e. 45
               
-                -> so it will go to first condition if queue is full it is not here queue is not full so it will skip this condition also 
+                -> so it will go to first condition if queue is full it is not here queue is not full so it will skip this 
+                   condition also 
                 -> then it will check it it is empty queue here queue is not empty so it will skip this condition also
                 -> it will insert a record in queue based on the following formulae:
                     - `queue[(endQueue + 1) % N]  = data`
                     => queue[(4 + 1) % 5]  = 45
-                    => lets calculate the inner formulae i.e (endQueue + 1) % N , here endqueue is pointing to cell 4 and N =  total size of array
+                    => lets calculate the inner formulae i.e (endQueue + 1) % N , here endqueue is pointing to cell 4 and 
+                       N =  total size of array
                     => (endQueue + 1) % N =>  (4 + 1) % 5
                     =>  (4 + 1) % 5 =>  5 % 5 = 0
                     => queue[0] = 45
@@ -170,8 +174,10 @@ It is implemeneted using the Physical data strture (like Stack) i.e.
      
      7.deQueue (remove) : here dequeue also has slightly concept, lets see
      
-                - if the queue is empty that means `endQueue == -1 && beginingQueue == -1`  exit from method -- it is same and nothing to change
-                - else if beginingQueue ==  endQueue  then `endQueue ==  && beginingQueue == -1`-- it is same and nothing to change
+                - if the queue is empty that means `endQueue == -1 && beginingQueue == -1`  exit from method -- it is same and 
+                   nothing to change
+                - else if beginingQueue ==  endQueue  then `endQueue ==  && beginingQueue == -1`-- it is same and nothing to 
+                  change
                 - else if beginingQueue !=  endQueue then  `beginingQueue =  (beginingQueue + 1) % N`;
                 
                 
@@ -181,16 +187,21 @@ It is implemeneted using the Physical data strture (like Stack) i.e.
                 
                 now we will invoke deque it will go to the code and check :
                 - if the queue is empty no it is not so it will skip this condition
-                - if beginingQueue ==  endQueue here beginingQueue is pointing to cell 2 and endqueue is pointing to cell 4 so it will skip this condition
-                - if beginingQueue !=  endQueue this condition is true as beginingQueue is pointing to cell 2 and endqueue is pointing to cell 4 and they are not 
-                equal so it will deque the element based on the formulae:
+                - if beginingQueue ==  endQueue here beginingQueue is pointing to cell 2 and endqueue is pointing to cell 4 so it will 
+                   skip this condition
+                - if beginingQueue !=  endQueue this condition is true as beginingQueue is pointing to cell 2 and endqueue is pointing 
+                  to cell 4 and they are not equal so it will deque the element based on the formulae:
+                
                 beginingQueue =  (beginingQueue + 1) % N
                 => beginingQueue = (2 + 1) % 5
                                  = 3 % 5 
                                  = 3 (3 % 5 = 3 and not 0 or 0.6 why lets see 
-                                     if the operation is 12 % 5 then 5 * 2 = 10 which is smaller than 12 and 5 * 3 = 15 so we will take 5 * 2 = 10
+                                     if the operation is 12 % 5 then 5 * 2 = 10 which is smaller than 12 and 5 * 3 = 15 so we will 
+                                     take 5 * 2 = 10
                                      so 12  - 10 = 2 
-                                     similarly for any first digit smaller than the second digit it will multiply by 0 so in this case it will be
+                                     similarly for any first digit smaller than the second digit it will multiply by 0 so in this case 
+                                     it will be
+                                     
                                      => 3 % 5
                                      => 3 - (5 * 0)
                                      => 3  - 0
@@ -211,22 +222,25 @@ It is implemeneted using the Physical data strture (like Stack) i.e.
         
         1. Now there is a disadvntage and that is if we want to enque element in a queue then :
             a. either we will say queue is full coz array size cannot be increased or
-            b. create another array with extra size and then copy the entire array and place in this new array(with extra size). But the problem with that is 
-            that copy and adding the records in new array is expensive as the Time complexity it will take is O(n). Thats why  Linked list has an advantage over 
-            it.
+            b. create another array with extra size and then copy the entire array and place in this new array(with extra size). But the 
+            problem with that is that copy and adding the records in new array is expensive as the Time complexity it will take is O(n). 
+            Thats why  Linked list has an advantage over it.
             
         2.Now lets take another example :
           [23][][][][][][][][][][][][]  - array with only one element.
           
-          Now the problem with such kind of array is that it is unnecessary taking extra space or memory and thats why Linked list has an advantage over it.
+          Now the problem with such kind of array is that it is unnecessary taking extra space or memory and thats why Linked list has an 
+          advantage over it.
             
         
       3. Lets take another array  [23][5][1][4][3][]
-       now the advantage of array over linked list is in case i want to search for any cell I dont have to traverse from the start like in the case of linked list
-       we can easily search/pick the array as we know the stating point/address and the last address of the array. 
+       
+       now the advantage of array over linked list is in case i want to search for any cell I dont have to traverse from the start like in 
+       the case of linked list we can easily search/pick the array as we know the stating point/address and the last address of the array. 
+       
        This is not easy in Linked List and to get any element other than first element one has to :
-       a. either traverse from one element to another element till we get the desired element. Now the problem with such kind of traversing is that it is costly as 
-          the time complexity for traversing is O(n).
+       a. either traverse from one element to another element till we get the desired element. Now the problem with such kind of traversing 
+          is that it is costly as the time complexity for traversing is O(n).
        b. there is other way also where you define the logic in such a manner that the search will be order of constant (O(1)) instead of O(n).
         
  
