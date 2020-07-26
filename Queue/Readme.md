@@ -111,11 +111,11 @@ It is implemeneted using the Physical data strture (like Stack) i.e.
      5.isFull - here the cncept is change let see :
               
               Algo:
-              - check if `(endQueue + 1) % N == beginingQueue` return true else false ----> Here N represents the 
+              - check if `(endQueue + 1) % N == beginingQueue` return true else false ----> Here N represents the
                 size of an array      
          
               lets see : 
-              here we way array of 5 that has only 3 element and the `endQueue is pointing to 5th element i.e. [9]` 
+              here we way array of 5 that has only 3 element and the `endQueue is pointing to 5th element i.e. [9]`
               and `beginingQueue pointing to 2nd element i.e.[1]`
           
               [][][1][4][9] 
@@ -125,14 +125,14 @@ It is implemeneted using the Physical data strture (like Stack) i.e.
                 => 5 % 5 == 2
                 => 0 == 2  =>  Queue is not Full 
                 
-                Again lets see with another example this time we have added one element in array, this time the 
+                Again lets see with another example this time we have added one element in array, this time the
                 beginingQueue is pointing to the 1st cell [][2][1][4][9] 
                 
                 => (4 + 1) % 5 == 1
                 => 5 % 5 == 1
                 => 0 == 1  =>  Queue is not Full 
                 
-               One last example: this time we have all the elements in array full with data, this time the beginingQueue 
+               One last example: this time we have all the elements in array full with data, this time the beginingQueue
                is pointing to the 0th cell [6][2][1][4][9]
                
                 => (4 + 1) % 5 == 0
@@ -142,7 +142,7 @@ It is implemeneted using the Physical data strture (like Stack) i.e.
      6.enQueue (insert) -  here the concept is also slightly change, lets see:
      
                 Algo:
-                - if the queue is Full that means `(endQueue + 1) % N == beginingQueue`  exit from method  ----> this is 
+                - if the queue is Full that means `(endQueue + 1) % N == beginingQueue`  exit from method  ----> this is
                   same
                 - if the queue is empty than  beginingQueue and endQueue both are -1  ----> this is same
                     -  point `beginingQueue == endQueue + 1` (i.e. 0)
@@ -152,20 +152,20 @@ It is implemeneted using the Physical data strture (like Stack) i.e.
                         -  point `endqueue == [endQueue + 1] % N` 
      
               lets see with the same example: 
-              here we way array of 5 that has only 3 element and the `endQueue is pointing to 5th element i.e. [9]` and 
+              here we way array of 5 that has only 3 element and the `endQueue is pointing to 5th element i.e. [9]` and
               `beginingQueue pointing to 2nd element i.e.[1]`
           
               [][][1][4][9]
               
               now we will enque one record i.e. 45
               
-                -> so it will go to first condition if queue is full it is not here queue is not full so it will skip 
+                -> so it will go to first condition if queue is full it is not here queue is not full so it will skip
                    this condition also 
                 -> then it will check it it is empty queue here queue is not empty so it will skip this condition also
                 -> it will insert a record in queue based on the following formulae:
                     - `queue[(endQueue + 1) % N]  = data`
                     => queue[(4 + 1) % 5]  = 45
-                    => lets calculate the inner formulae i.e (endQueue + 1) % N , here endqueue is pointing to cell 4 
+                    => lets calculate the inner formulae i.e (endQueue + 1) % N , here endqueue is pointing to cell 4
                        and N =  total size of array
                     => (endQueue + 1) % N =>  (4 + 1) % 5
                     =>  (4 + 1) % 5 =>  5 % 5 = 0
@@ -174,9 +174,9 @@ It is implemeneted using the Physical data strture (like Stack) i.e.
      
      7.deQueue (remove) : here dequeue also has slightly concept, lets see
      
-                - if the queue is empty that means `endQueue == -1 && beginingQueue == -1`  exit from method -- it is 
+                - if the queue is empty that means `endQueue == -1 && beginingQueue == -1`  exit from method -- it is
                   same and nothing to change
-                - else if beginingQueue ==  endQueue  then `endQueue ==  && beginingQueue == -1`-- it is same and 
+                - else if beginingQueue ==  endQueue  then `endQueue ==  && beginingQueue == -1`-- it is same and
                   nothing to change
                 - else if beginingQueue !=  endQueue then  `beginingQueue =  (beginingQueue + 1) % N`;
                 
@@ -187,20 +187,20 @@ It is implemeneted using the Physical data strture (like Stack) i.e.
                 
                 now we will invoke deque it will go to the code and check :
                 - if the queue is empty no it is not so it will skip this condition
-                - if beginingQueue ==  endQueue here beginingQueue is pointing to cell 2 and endqueue is pointing 
+                - if beginingQueue ==  endQueue here beginingQueue is pointing to cell 2 and endqueue is pointing
                   to cell 4 so it will skip this condition
-                - if beginingQueue !=  endQueue this condition is true as beginingQueue is pointing to cell 2 and 
-                  endqueue is pointing to cell 4 and they are not equal so it will deque the element based on the 
+                - if beginingQueue !=  endQueue this condition is true as beginingQueue is pointing to cell 2 and
+                  endqueue is pointing to cell 4 and they are not equal so it will deque the element based on the
                   formulae:
                 
                 beginingQueue =  (beginingQueue + 1) % N
                 => beginingQueue = (2 + 1) % 5
                                  = 3 % 5 
                                  = 3 (3 % 5 = 3 and not 0 or 0.6 why lets see 
-                                     if the operation is 12 % 5 then 5 * 2 = 10 which is smaller than 12 
+                                     if the operation is 12 % 5 then 5 * 2 = 10 which is smaller than 12
                                      and 5 * 3 = 15 so we will take 5 * 2 = 10
                                      so 12  - 10 = 2 
-                                     similarly for any first digit smaller than the second digit it will multiply 
+                                     similarly for any first digit smaller than the second digit it will multiply
                                      by 0 so in this case it will be
                                      
                                      => 3 % 5
